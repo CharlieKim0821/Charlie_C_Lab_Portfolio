@@ -1,15 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<link rel="icon" type="image/png" href="./C랩/_(positive)_.png" />
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>(사)교육실험실21</title>
+    <style>
+        .headerinfo:hover {
+            color: navy;
+        }
+
+        .headerinfo2:hover {
+            color: navy;
+        }
+
+        .headerinfo3:hover {
+            color: navy;
+        }
+
+        .headerinfo4:hover {
+            color: navy;
+        }
+
+        .headerinfo5:hover {
+            color: navy;
+        }
+
+
+        .header {
+            background-color: white;
+            width: 100%;
+            height: 90px;
+            flex-direction: row;
+            display: flex;
+            font-family: 'Nanum Gothic Coding', monospace;
+        }
+
+        .fixed-header {
+            font-size: 27px;
+            margin-left: 90px;
+            margin-right: 210px;
+            margin-top: 26px;
+            margin-bottom: 0px;
+        }
+
+
+        .headerinfos {
+            margin-top: -20px;
+            font-size: 15px;
+            flex-direction: row;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .headerinfo {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .headerinfo2 {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .headerinfo3 {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .headerinfo4 {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .headerinfo5 {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .video {
+            position: absolute;
+            width: 100%;
+            height: 550px;
+            overflow-y: hidden;
+            overflow-x: hidden;
+            margin-left: -10px;
+        }
+
+        iframe {
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            left: -900px;
+        }
+
+        .realbody {
+            position: absolute;
+            top: 700px;
+        }
+
+        .newschool {
+            margin-left: 400px;
+            margin-right: 400px;
+            top: 100px;
+            margin-bottom: 100px;
+        }
+
+        .title {
+            font-size: 25px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .naeyong {
+            text-align: center;
+            line-height: 10px;
+            font-size: 13px;
+        }
+
+        .blocks {
+            flex-direction: row;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .block1 {
+            background-color: royalblue;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            height: 225px;
+            width: 350px;
+        }
+
+        .more1 {
+            width: 100px;
+            height: 30px;
+            text-align: center;
+            top: 100px;
+            left: 8px;
+            position: relative;
+            font-size: 12px;
+        }
+
+        .learningrule1 {
+            margin-top: 20px;
+            margin-left: 17px;
+            margin-bottom: 0px;
+        }
+
+        .glr {
+            font-size: 14px;
+            margin-top: -15px;
+            margin-left: 17px;
+            margin-right: 17px;
+        }
+
+        .block2 {
+            background-color: navy;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            height: 225px;
+            width: 350px;
+        }
+
+        .more2 {
+            width: 100px;
+            height: 30px;
+            text-align: center;
+            top: 100px;
+            left: 8px;
+            position: relative;
+            font-size: 12px;
+        }
+
+        .learningrule2 {
+            margin-top: 20px;
+            margin-left: 17px;
+            margin-bottom: 0px;
+        }
+
+        .curriculum {
+            font-size: 14px;
+            margin-top: -15px;
+            margin-left: 17px;
+            margin-right: 17px;
+        }
+
+        .block3 {
+            background-color: royalblue;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            height: 225px;
+            width: 350px;
+        }
+
+        .more3 {
+            width: 100px;
+            height: 30px;
+            text-align: center;
+            top: 100px;
+            left: 8px;
+            position: relative;
+            font-size: 12px;
+        }
+
+        .learningrule3 {
+            margin-top: 20px;
+            margin-left: 17px;
+            margin-bottom: 0px;
+        }
+
+        .living {
+            font-size: 14px;
+            margin-top: -15px;
+            margin-left: 17px;
+            margin-right: 17px;
+        }
+
+        .notice {
+            margin-top: 40px;
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            text-align: left;
+
+        }
+    </style>
 </head>
 
 <body>
-    <h1>네오는 이제 혼자가 아니야!</h1>
+
+    <div class="header">
+        <div class="fixed-header"><strong>(사)교육실험실21</strong></div>
+
+        <div class="headerinfos">
+            <div class="headerinfo">연구 원칙</div>
+            <pr></pr>
+            <div class="headerinfo2">연구 과정</div>
+            <div class="headerinfo3">연구 활동</div>
+            <div class="headerinfo4">법인 소식</div>
+            <div class="headerinfo5">거꾸로캠퍼스 소개</div>
+        </div>
+    </div>
+
+    <div class="video">
+        <iframe
+            src="https://player.vimeo.com/video/427031436?title=0&muted=1&autoplay=1&autopause=0&controls=0&loop=1&background=1&app_id=122963"
+            frameborder="0"></iframe>
+    </div>
+
+    <div class="realbody">
+        <div class="newschool">
+            <div class="title"><strong>새로운 시대를 열어갈 다음 세대를 위한 새로운 학교</strong></div>
+            <div class="naeyong"><br>사단법인 교육실험실21의 거꾸로캠퍼스는 21세기 학습자를 위한 미래 역량 중심 교육을 제공하는 실험 학교입니다.</br> <br>미래 사회에서
+                주체적인 삶을
+                살며 협력을 통해
+                긍정적인 변화를 이끄는 인재를
+                양성합니다.</br></div>
+        </div>
+
+        <div class="blocks">
+            <div class="block1">
+                <div class="learningrule1"><strong>배움의 원칙</strong></div>
+                <div class="glr"><br>거꾸로캠퍼스가 실현하는</br> 21세기 배움의 원칙 아홉 가지</div>
+                <div class="more1"><strong>자세히보기🠒</strong></div>
+            </div>
+
+            <div class="block2">
+                <div class="learningrule2"><strong>교육과정</strong></div>
+                <div class="curriculum"><br>거꾸로캠퍼스의 교육 과정과</br>교육 프로그램에 대한 안내</div>
+                <div class="more2"><strong>자세히보기🠒</strong></div>
+            </div>
+
+            <div class="block3">
+                <div class="learningrule3"><strong>학교생활</strong></div>
+                <div class="living"><br>거꾸로캠퍼스가 만들어가는</br>교육 프로그램에 대한 안내</div>
+                <div class="more3"><strong>자세히보기🠒</strong></div>
+            </div>
+        </div>
+
+        <div class="notice">
+            <div class="notice1">경영공시 사)교육실험실21 2020년 결산공지</div>
+            <hr style="border: solid 1px gray; width: 70%;">
+            <div class="notice2">공지사항 2021 1모듈 거꾸로캠퍼스 배움장터 초대의 글</div>
+            <hr style="border: solid 1px gray; width: 70%;">
+            <div class="notice3">공지사항 2021 하반기 신입생 모집요강</div>
+            <hr style="border: solid 1px gray; width: 70%;">
+            <div class="notice4">공지사항 2021 상반기 학교설명회 안내 (2021 하반기 입학)</div>
+            <hr style="border: solid 1px gray; width: 70%;">
+            <div class="notice5">공지사항 2021 상반기 신입생 안내사항</div>
+            <hr style="border: solid 1px gray; width: 70%;">
+            <div class="notice6">공지사항 2021 상반기 거꾸로캠퍼스 입학전형 결과 공지</div>
+            <hr style="border: solid 1px gray; width: 70%;">
+        </div>
+    </div>
+
+
 
 </body>
 
