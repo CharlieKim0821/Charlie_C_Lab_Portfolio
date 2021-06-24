@@ -6,9 +6,17 @@
     <style>
         @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 
+        @font-face {
+            font-family: 'KCC-eunyoung';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/KCC-eunyoung-Regular.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
         body {
             font-family: 'Open Sans', sans-serif;
             margin: 0;
+            background: linear-gradient(-90deg, rgb(1, 64, 105), rgb(190, 152, 212));
         }
 
         .content-section--fullpage {
@@ -18,7 +26,6 @@
             justify-content: center;
             flex: 1;
             height: 90vh;
-            background: linear-gradient(-90deg, rgb(1, 64, 105), rgb(190, 152, 212));
         }
 
         .content-section--fullpage2 {
@@ -28,7 +35,6 @@
             justify-content: center;
             flex: 1;
             height: 200vh;
-            background: linear-gradient(-90deg, rgb(1, 64, 105), rgb(190, 152, 212));
         }
 
 
@@ -83,6 +89,46 @@
         .know {
             padding: 0px 0px 260px 100px;
         }
+
+        /*여기까지 스크롤 이벤트*/
+
+
+        .circle {
+            background: linear-gradient(-90deg, rgb(190, 152, 212), rgb(1, 64, 105));
+            font-family: 'KCC-eunyoung';
+            width: 240px;
+            height: 240px;
+            border-radius: 240px;
+            text-align: center;
+            margin: auto;
+            font-size: 40px;
+            color: white;
+            line-height: 240px;
+            box-shadow:
+                0 0 20px #fff,
+                -20px 0 80px rgb(190, 152, 212),
+                20px 0 80px rgb(1, 64, 105),
+                inset 0 0 50px #fff,
+                inset 50px 0 80px rgb(190, 152, 212),
+                inset -50px 0 80px rgb(1, 64, 105),
+                inset 50px 0 300px rgb(190, 152, 212),
+                inset -50px 0 300px rgb(1, 64, 105);
+            animation: pulsate 6s linear infinite;
+        }
+
+        @keyframes pulsate {
+            50% {
+                box-shadow:
+                    0 0 20px #fff,
+                    -20px 0 80px rgb(190, 152, 212),
+                    20px 0 80px rgb(1, 64, 105),
+                    inset 0 0 50px #fff,
+                    inset 50px 0 80px rgb(190, 152, 212),
+                    inset -50px 0 80px rgb(1, 64, 105),
+                    inset 50px 0 300px rgb(190, 152, 212),
+                    inset -50px 0 300px rgb(1, 64, 105);
+            }
+        }
     </style>
 </head>
 
@@ -98,14 +144,13 @@
         </span>
     </section>
     <section class="content-section--fullpage2">
-        <div class="keyword">
-            <div class="interest">관심사</div>
-            <div class="effort">노력</div>
-            <div class="know">지식</div>
-        </div>
-
+        <div class="circle">팀 프로젝트</div>
+        <div class="circle">개인 프로젝트</div>
+        <div class="circle">기타 활동</div>
 
     </section>
+
+    <div class=""></div>
 
 
     <script>
