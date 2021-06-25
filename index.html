@@ -44,7 +44,6 @@
             justify-content: center;
             flex: 1;
             height: 130vh;
-            background-color: black;
         }
 
 
@@ -84,8 +83,15 @@
             letter-spacing: 1px;
         }
 
+
+
         /*여기까지 스크롤 이벤트*/
 
+        .projects {
+            display: flex;
+            flex: 1;
+            align-items: center;
+        }
 
         .fill:hover,
         .fill:focus {
@@ -112,7 +118,7 @@
             color: #fff;
             font-family: 'Archivo', sans-serif;
             font-size: 35px;
-            text-shadow: 0px 1px 1px silver;
+            text-shadow: 0px 1px 1px black;
             font-weight: 700;
             letter-spacing: 1px;
             text-align: center;
@@ -127,7 +133,7 @@
             color: #fff;
             font-family: 'Archivo', sans-serif;
             font-size: 35px;
-            text-shadow: 0px 1px 1px silver;
+            text-shadow: 0px 1px 1px black;
             font-weight: 700;
             letter-spacing: 1px;
             text-align: center;
@@ -143,7 +149,7 @@
             color: #fff;
             font-family: 'Archivo', sans-serif;
             font-size: 35px;
-            text-shadow: 0px 1px 1px silver;
+            text-shadow: 0px 1px 1px black;
             font-weight: 700;
             letter-spacing: 1px;
             text-align: center;
@@ -169,7 +175,7 @@
         }
 
         h1 {
-            font-family: 'Archivo', sans-serif;
+            font-family: 'Open Sans', sans-serif;
             padding: 0 10px;
             text-align: center;
             font-size: 50px;
@@ -248,10 +254,14 @@
 
     <section class="content-section--fullpage2">
         <section class="portfolio-experiment">
+            <h1>Hi my name is Charlie. Here are some of my projects.</h1>
             <div class="Projects">
-                <h1>PROJECTS</h1>
-                <button class="fill">Personal</button>
-                <button class="fill2">Team</button>
+                <a href="slidedemo.html">
+                    <button class="fill">Personal</button>
+                </a>
+                <a href="teamproject.html">
+                    <button class="fill2">Team</button>
+                </a>
                 <button class="fill3">ETC</button>
             </div>
 
@@ -326,6 +336,7 @@
                 fadeOut(element, topDistance, tweenDistance);
             });
         });
+
 
 
 
