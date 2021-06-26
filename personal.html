@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Personal Projects</title>
 
     <style>
         @import url('https://fonts.googleapis.com/css?family=Heebo:800');
 
         body {
-            background: linear-gradient(-90deg, rgb(1, 64, 105), rgb(190, 152, 212));
+            background: linear-gradient(-90deg, #355C7D, #6C5B7B, #C06C84);
 
         }
 
@@ -27,8 +27,8 @@
             align-items: center;
             justify-content: center;
             flex: 1;
-            height: 100vh;
-            background: linear-gradient(-90deg, rgb(1, 64, 105), rgb(190, 152, 212));
+            height: 85vh;
+            background: linear-gradient(-90deg, #355C7D, #6C5B7B, #C06C84);
         }
 
 
@@ -269,6 +269,145 @@
         }
 
         /*여기까지 슬라이더*/
+
+
+
+        body {
+            height: 100vh;
+        }
+
+        .content-section--fullpage2 {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+            height: 10vh;
+        }
+
+        .icons {
+            font-size: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .icon {
+            display: inline-block;
+            width: 60px;
+            height: 80px;
+            border-radius: 2px;
+            cursor: pointer;
+            position: relative;
+            margin: 0 5px;
+        }
+
+        .icon::after {
+            content: '';
+            position: absolute;
+            display: block;
+            top: 0;
+            right: 0;
+            width: 0;
+            height: 0;
+            border-radius: 0 2px;
+            transition: all 0.2s linear;
+            backface-visibility: hidden;
+        }
+
+        .icon--doc {
+            background: linear-gradient(-90deg, #355C7D, #6C5B7B, #C06C84);
+        }
+
+        .icon--doc::after {
+            background: linear-gradient(45deg, #8ab4f8 50%, #fff 50%);
+        }
+
+        .icon--doc i::before {
+            content: '🎧';
+        }
+
+        .icon--pdf {
+            background-color: #db4437;
+        }
+
+        .icon--pdf::after {
+            background: linear-gradient(45deg, #e78178 50%, #fff 50%);
+        }
+
+        .icon--pdf i::before {
+            content: '🕒';
+        }
+
+        .icon--sheets {
+            background-color: #0f9d58;
+        }
+
+        .icon--sheets::after {
+            background: linear-gradient(45deg, #16e37f 50%, #fff 50%);
+        }
+
+        .icon--sheets i::before {
+            content: '⌨️';
+        }
+
+        .icon--slides {
+            background-color: #f5b707;
+        }
+
+        .icon--slides::after {
+            background: linear-gradient(45deg, #facd4f 50%, #fff 50%);
+        }
+
+        .icon--slides i::before {
+            content: '👟';
+        }
+
+        .icon i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: block;
+            font-size: 10px;
+            color: #fff;
+        }
+
+        .icon i::before,
+        .icon i::after {
+            display: block;
+        }
+
+        .icon i::before {
+            text-align: center;
+            font-size: 12px;
+            opacity: 0;
+            transform: translateY(5px);
+        }
+
+        .icon i::after {
+            content: attr(title);
+            transform: translateY(-5px);
+        }
+
+        .icon:hover {
+            border-radius: 2px 4px 2px 2px;
+        }
+
+        .icon:hover::after {
+            width: 12px;
+            height: 12px;
+        }
+
+        .icon:hover i::before {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .icon:hover i::after {
+            transform: translateY(0);
+        }
     </style>
 </head>
 
@@ -337,6 +476,17 @@
                     <div id='slide4' class='slide4'></div>
                 </a>
             </div>
+        </div>
+
+
+    </section>
+
+    <section class="content-section--fullpage2">
+        <div class="icons">
+            <div class="icon icon--doc"><i title="M1"></i></div>
+            <div class="icon icon--pdf"><i title="M2"></i></div>
+            <div class="icon icon--sheets"><i title="M3"></i></div>
+            <div class="icon icon--slides"><i title="M4"></i></div>
         </div>
     </section>
 
