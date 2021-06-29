@@ -5,628 +5,350 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Projects</title>
+    <title>Personal Project 1</title>
 
     <style>
-        @import url('https://fonts.googleapis.com/css?family=Heebo:800');
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:300|Spartan&display=swap');
 
-        body {
-            background: linear-gradient(-90deg, #355C7D, #6C5B7B, #C06C84);
-
+        @font-face {
+            font-family: 'Wemakeprice-Bold';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Wemakeprice-Bold.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
         }
 
         * {
-            margin: 0;
-            padding: 0;
+            font-family: 'Montserrat', serif;
             box-sizing: border-box;
         }
 
-        .content-section--fullpage {
-            position: relative;
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: linear-gradient(-90deg, #F3904F, #3B4371);
+            height: 100vh;
+            width: 100%;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        .page {
+            color: black;
+            width: 100vw;
+            height: calc(100vh - 4.5rem);
+            padding-left: 1rem;
+            padding-right: 1rem;
+            margin: 0;
             display: flex;
-            align-items: center;
+            flex-direction: column;
             justify-content: center;
-            flex: 1;
-            height: 85vh;
-            background: linear-gradient(-90deg, #355C7D, #6C5B7B, #C06C84);
+            align-items: center;
         }
 
-
-        .parent {
-            width: 800px;
-            height: 600px;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin: auto auto;
-            overflow: hidden;
-            position: absolute;
-            border-radius: 16px;
-            -webkit-box-shadow: 0 0 88px 5px rgba(0, 0, 0, 0.75);
-            -moz-box-shadow: 0 0 88px 5px rgba(0, 0, 0, 0.75);
-            box-shadow: 0 0 88px 5px rgba(0, 0, 0, 0.75);
+        nav~.content-page {
+            margin-top: 4.5rem;
         }
 
-        svg {
-            position: absolute;
-            z-index: 1;
-            width: 800px;
-            height: 600px;
+        .content-page {
+            font-size: 1.75rem;
         }
 
-        button {
-            position: absolute;
-            z-index: 50;
-            width: 40px;
-            overflow: hidden;
-            height: 40px;
-            border: none;
-            border-radius: 50%;
-            background: #fff;
-            cursor: pointer;
-            -webkit-box-shadow: 0 0 88px 5px rgba(0, 0, 0, 0.75);
-            -moz-box-shadow: 0 0 88px 5px rgba(0, 0, 0, 0.75);
-            box-shadow: 0 0 88px 5px rgba(0, 0, 0, 0.75);
-        }
-
-        button:focus {
-            outline-width: 0;
-        }
-
-        circle {
-            stroke: #fff;
-            fill: none;
-            transition: 0.3s;
-        }
-
-        #svg1 circle {
-            transition-timing-function: linear;
-        }
-
-        #svg2 circle {
-            transition-timing-function: linear;
-        }
-
-        #Capa_1 {
-            position: absolute;
-            width: 16px;
-            height: 16px;
-            transform: translate(-7px, -8px);
-        }
-
-        #Capa_2 {
-            position: absolute;
-            width: 16px;
-            height: 16px;
-            transform: translate(-9px, -8px);
-        }
-
-        .right {
-            margin-left: 750px;
-            margin-top: 270px;
-            border: 1px solid #849494;
-            background-color: transparent;
-            transition: 0.5s;
-        }
-
-        .right:hover {
-            background-color: #fff;
-        }
-
-        .left {
-            margin-left: 0.5%;
-            margin-top: 270px;
-            border: 1px solid #849494;
-            background-color: transparent;
-            transition: 0.5s;
-        }
-
-        .left:hover {
-            background-color: #fff;
-        }
-
-        .circle1 {
-            transition-delay: 0.05s;
-        }
-
-        .circle2 {
-            transition-delay: 0.1s;
-        }
-
-        .circle3 {
-            transition-delay: 0.15s;
-        }
-
-        .circle4 {
-            transition-delay: 0.2s;
-        }
-
-        .circle5 {
-            transition-delay: 0.25s;
-        }
-
-        .circle6 {
-            transition-delay: 0.3s;
-        }
-
-        .circle7 {
-            transition-delay: 0.35s;
-        }
-
-        .circle8 {
-            transition-delay: 0.4s;
-        }
-
-        .circle9 {
-            transition-delay: 0.45s;
-        }
-
-        .circle10 {
-            transition-delay: 0.05s;
-        }
-
-        .circle11 {
-            transition-delay: 0.1s;
-        }
-
-        .circle12 {
-            transition-delay: 0.15s;
-        }
-
-        .circle13 {
-            transition-delay: 0.2s;
-        }
-
-        .circle14 {
-            transition-delay: 0.25s;
-        }
-
-        .circle15 {
-            transition-delay: 0.3s;
-        }
-
-        .circle16 {
-            transition-delay: 0.35s;
-        }
-
-        .circle17 {
-            transition-delay: 0.4s;
-        }
-
-        .circle18 {
-            transition-delay: 0.45s;
-        }
-
-        .slide1 {
-            background-image: url('./pm1new.PNG');
-        }
-
-        .slide2 {
-            background-image: url('./pm2new.PNG');
-        }
-
-        .slide3 {
-            background-image: url('./pm3new.PNG');
-        }
-
-        .slide4 {
-            background-image: url('./pm4new.PNG');
-        }
-
-        .slider {
-            position: absolute;
-            width: 400%;
-            height: 100%;
-            background: #000;
-            display: inline-flex;
-            overflow: hidden;
-        }
-
-        .slide1,
-        .slide2,
-        .slide3,
-        .slide4 {
-            position: absolute;
-            background-position: center;
-            background-size: cover;
-            color: #fff;
-            font-size: 62px;
-            padding-top: 138px;
-            font-weight: 800;
-            font-family: 'Heebo', sans-serif;
+        #intro {
             text-align: center;
-            width: 25%;
-            height: 100%;
-            z-index: 10;
-            transition: 1.4s;
         }
 
-        .tran {
-            transform: scale(1.3);
-        }
-
-        .up1 {
-            z-index: 20;
-        }
-
-        .up2 {
-            z-index: 40;
-        }
-
-        .steap {
-            stroke-width: 0;
-        }
-
-        .streak {
-            stroke-width: 82px;
-        }
-
-        @media (max-width: 700px) {
-            .parent {
-                margin-left: 1%;
+        @media (max-width: 720px) {
+            #intro {
+                margin-top: 4.5rem;
             }
         }
 
-        /*여기까지 슬라이더*/
-
-
-
-        body {
-            height: 100vh;
+        #intro>#intro-title {
+            font-size: 1.75rem;
+            margin-bottom: 2rem;
         }
 
-        .content-section--fullpage2 {
-            position: relative;
+        #intro>#intro-description {
+            font-size: 1rem;
+        }
+
+        nav {
+            position: absolute;
+            top: calc(100vh - 4.5rem);
+            width: 100vw;
+            min-height: 4.5rem;
+            background: white;
+            box-shadow: 0 -2px 1rem #cfd2cd;
             display: flex;
+            justify-content: space-around;
             align-items: center;
-            justify-content: center;
-            flex: 1;
-            height: 10vh;
         }
 
-        .icons {
-            font-size: 0;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+        @media (max-width: 720px) {
+            nav {
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: flex-start;
+                top: 0;
+                height: 100vh;
+                width: initial;
+            }
         }
 
-        .icon {
-            display: inline-block;
-            width: 60px;
-            height: 80px;
-            border-radius: 2px;
-            cursor: pointer;
+        nav a {
             position: relative;
-            margin: 0 5px;
-        }
-
-        .icon::after {
-            content: '';
-            position: absolute;
-            display: block;
-            top: 0;
-            right: 0;
-            width: 0;
-            height: 0;
-            border-radius: 0 2px;
-            transition: all 0.2s linear;
-            backface-visibility: hidden;
-        }
-
-        .icon--doc {
-            background: linear-gradient(-90deg, #355C7D, #6C5B7B, #C06C84);
-        }
-
-        .icon--doc::after {
-            background: linear-gradient(45deg, #8ab4f8 50%, #fff 50%);
-        }
-
-        .icon--doc i::before {
-            content: '🎧';
-        }
-
-        .icon--pdf {
-            background-color: #db4437;
-        }
-
-        .icon--pdf::after {
-            background: linear-gradient(45deg, #e78178 50%, #fff 50%);
-        }
-
-        .icon--pdf i::before {
-            content: '🕒';
-        }
-
-        .icon--sheets {
-            background-color: #0f9d58;
-        }
-
-        .icon--sheets::after {
-            background: linear-gradient(45deg, #16e37f 50%, #fff 50%);
-        }
-
-        .icon--sheets i::before {
-            content: '⌨️';
-        }
-
-        .icon--slides {
-            background-color: #f5b707;
-        }
-
-        .icon--slides::after {
-            background: linear-gradient(45deg, #facd4f 50%, #fff 50%);
-        }
-
-        .icon--slides i::before {
-            content: '👟';
-        }
-
-        .icon i {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            display: block;
-            font-size: 10px;
-            color: #fff;
-        }
-
-        .icon i::before,
-        .icon i::after {
-            display: block;
-        }
-
-        .icon i::before {
+            background: transparent;
             text-align: center;
-            font-size: 12px;
+            height: 4.5rem;
+            text-decoration: none;
+            color: #40403f;
+
+        }
+
+        @media (max-width: 720px) {
+            nav a {
+                width: 100%;
+                margin: auto;
+                padding: 0 1.5rem;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
+        nav a.menu-btn {
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+        }
+
+        @media (min-width: 720px) {
+            nav a.menu-btn {
+                display: none;
+            }
+        }
+
+        nav a#user-btn {
+            color: #40403f;
+        }
+
+        nav a.tab:not(.placeholder),
+        nav a.tab:not(.placeholder)::after {
+            border: none;
+            outline: none;
+            cursor: pointer;
+            flex: 1;
+            line-height: 4.5rem;
+            font-size: 1rem;
+            vertical-align: center;
+        }
+
+        nav a.tab:not(.placeholder)::before,
+        nav a.tab:not(.placeholder)::after {
+            font-family: 'Wemakeprice-Bold';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
             opacity: 0;
-            transform: translateY(5px);
         }
 
-        .icon i::after {
-            content: attr(title);
-            transform: translateY(-5px);
+        nav a.tab:not(.placeholder)::before {
+            content: "";
+            border-bottom: solid 3px #F3904F;
+            transition: 0.5s ease;
+            z-index: 1000;
         }
 
-        .icon:hover {
-            border-radius: 2px 4px 2px 2px;
+        @media (max-width: 720px) {
+            nav a.tab:not(.placeholder)::before {
+                display: none;
+            }
         }
 
-        .icon:hover::after {
-            width: 12px;
-            height: 12px;
+        nav a.tab:not(.placeholder)::after {
+            content: attr(data-text);
+            color: #F3904F;
+            background: linear-gradient(45deg, #606c88, #3f4c6b);
         }
 
-        .icon:hover i::before {
-            transform: translateY(0);
+        @media (max-width: 720px) {
+            nav a.tab:not(.placeholder)::after {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0 1.5rem;
+            }
+        }
+
+        nav a.tab:not(.placeholder):hover::after {
             opacity: 1;
+            transition: 0.5s ease;
         }
 
-        .icon:hover i::after {
-            transform: translateY(0);
+        nav a.tab:not(.placeholder).active::before {
+            opacity: 1;
+            transition: 0.5s ease;
+        }
+
+        nav a.tab.hidden {
+            display: none;
+        }
+
+        nav.hidden {
+            transform: translateX(-100%);
         }
     </style>
 </head>
 
 <body>
-    <section class="content-section--fullpage">
-        <div class='parent'>
-            <div class='slider'>
-                <button type="button" id='right' class='right' name="button">
-
-                    <svg version="1.1" id="Capa_1" width='40px' height='40px ' xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 477.175 477.175"
-                        style="enable-background:new 0 0 477.175 477.175;" xml:space="preserve">
-                        <g>
-                            <path style='fill: #9d9d9d;' d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5
-             c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z
-             " />
-                        </g>
-
-                    </svg>
-
-                </button>
-                <button type="button" id='left' class='left' name="button">
-                    <svg version="1.1" id="Capa_2" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 477.175 477.175"
-                        style="enable-background:new 0 0 477.175 477.175;" xml:space="preserve">
-                        <g>
-                            <path style='fill: #9d9d9d;' d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225
-             c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z" />
-                        </g>
-                    </svg>
-                </button>
-                <svg id='svg2' class='up2' xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <circle id='circle1' class='circle1 steap' cx="34px" cy="49%" r="20" />
-                    <circle id='circle2' class='circle2 steap' cx="34px" cy="49%" r="100" />
-                    <circle id='circle3' class='circle3 steap' cx="34px" cy="49%" r="180" />
-                    <circle id='circle4' class='circle4 steap' cx="34px" cy="49%" r="260" />
-                    <circle id='circle5' class='circle5 steap' cx="34px" cy="49%" r="340" />
-                    <circle id='circle6' class='circle6 steap' cx="34px" cy="49%" r="420" />
-                    <circle id='circle7' class='circle7 steap' cx="34px" cy="49%" r="500" />
-                    <circle id='circle8' class='circle8 steap' cx="34px" cy="49%" r="580" />
-                    <circle id='circle9' class='circle9 steap' cx="34px" cy="49%" r="660" />
-                </svg>
-                <svg id='svg1' class='up2' xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <circle id='circle10' class='circle10 steap' cx="648px" cy="49%" r="20" />
-                    <circle id='circle11' class='circle11 steap' cx="648px" cy="49%" r="100" />
-                    <circle id='circle12' class='circle12 steap' cx="648px" cy="49%" r="180" />
-                    <circle id='circle13' class='circle13 steap' cx="648px" cy="49%" r="260" />
-                    <circle id='circle14' class='circle14 steap' cx="648px" cy="49%" r="340" />
-                    <circle id='circle15' class='circle15 steap' cx="648px" cy="49%" r="420" />
-                    <circle id='circle16' class='circle16 steap' cx="648px" cy="49%" r="500" />
-                    <circle id='circle17' class='circle17 steap' cx="648px" cy="49%" r="580" />
-                    <circle id='circle18' class='circle18 steap' cx="648px" cy="49%" r="660" />
-                </svg>
-                <a href="pm1.html">
-                    <div id='slide1' class='slide1 up1'></div>
-                </a>
-                <a href="pm2.html">
-                    <div id='slide2' class='slide2'></div>
-                </a>
-                <a href="pm3.html">
-                    <div id='slide3' class='slide3'></div>
-                </a>
-                <a href="pm4.html">
-                    <div id='slide4' class='slide4'></div>
-                </a>
-            </div>
-        </div>
-
-
-    </section>
-
-    <section class="content-section--fullpage2">
-        <div class="icons">
-            <div class="icon icon--doc"><i title="M1"></i></div>
-            <div class="icon icon--pdf"><i title="M2"></i></div>
-            <div class="icon icon--sheets"><i title="M3"></i></div>
-            <div class="icon icon--slides"><i title="M4"></i></div>
-        </div>
-    </section>
-
 
     <script>
-        var curpage = 1;
-        var sliding = false;
-        var click = true;
-        var left = document.getElementById("left");
-        var right = document.getElementById("right");
-        var pagePrefix = "slide";
-        var pageShift = 500;
-        var transitionPrefix = "circle";
-        var svg = true;
-
-        function leftSlide() {
-            if (click) {
-                if (curpage == 1) curpage = 5;
-                console.log("woek");
-                sliding = true;
-                curpage--;
-                svg = true;
-                click = false;
-                for (k = 1; k <= 4; k++) {
-                    var a1 = document.getElementById(pagePrefix + k);
-                    a1.className += " tran";
-                }
-                setTimeout(() => {
-                    move();
-                }, 200);
-                setTimeout(() => {
-                    for (k = 1; k <= 4; k++) {
-                        var a1 = document.getElementById(pagePrefix + k);
-                        a1.classList.remove("tran");
-                    }
-                }, 1400);
+        document.addEventListener("DOMContentLoaded", e => {
+            function offset(elem) {
+                let rect = elem.getBoundingClientRect();
+                let top = rect.top + (window.pageYOffset || document.documentElement.scrollTop),
+                    left = rect.left + (window.pageYOffset || document.documentElement.scrollLeft),
+                    right = left + elem.clientWidth,
+                    bottom = top + elem.clientHeight;
+                return { top, right, bottom, left };
             }
-        }
 
-        function rightSlide() {
-            if (click) {
-                if (curpage == 4) curpage = 0;
-                console.log("woek");
-                sliding = true;
-                curpage++;
-                svg = false;
-                click = false;
-                for (k = 1; k <= 4; k++) {
-                    var a1 = document.getElementById(pagePrefix + k);
-                    a1.className += " tran";
-                }
-                setTimeout(() => {
-                    move();
-                }, 200);
-                setTimeout(() => {
-                    for (k = 1; k <= 4; k++) {
-                        var a1 = document.getElementById(pagePrefix + k);
-                        a1.classList.remove("tran");
-                    }
-                }, 1400);
+            function vh(v) {
+                let h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+                return (v * h) / 100;
             }
-        }
 
-        function move() {
-            if (sliding) {
-                sliding = false;
-                if (svg) {
-                    for (j = 1; j <= 9; j++) {
-                        var c = document.getElementById(transitionPrefix + j);
-                        c.classList.remove("steap");
-                        c.setAttribute("class", transitionPrefix + j + " streak");
-                        console.log("streak");
-                    }
-                } else {
-                    for (j = 10; j <= 18; j++) {
-                        var c = document.getElementById(transitionPrefix + j);
-                        c.classList.remove("steap");
-                        c.setAttribute("class", transitionPrefix + j + " streak");
-                        console.log("streak");
-                    }
-                }
-                setTimeout(() => {
-                    for (i = 1; i <= 4; i++) {
-                        if (i == curpage) {
-                            var a = document.getElementById(pagePrefix + i);
-                            a.className += " up1";
-                        } else {
-                            var b = document.getElementById(pagePrefix + i);
-                            b.classList.remove("up1");
+            const nav = document.querySelector("nav");
+            const tabs = document.querySelectorAll("nav > a.tab");
+            const menu_btn = document.querySelector("nav > .menu-btn");
+            const content_pages = document.querySelectorAll(".content-page");
+            const md = 720;
+
+            let nav_height = nav.clientHeight;
+            let nav_top_offset = offset(nav).top;
+
+            let scroll_position = 0;
+            let ticking = false;
+
+            window.addEventListener("scroll", e => {
+                scroll_position = window.pageYOffset;
+                if (!ticking) {
+                    window.requestAnimationFrame(() => {
+                        if (scroll_position >= nav_top_offset) {
+                            nav.style.position = "fixed";
+                            nav.style.top = "0";
+                            nav.transition = "0.5s linear";
                         }
-                    }
-                    sliding = true;
-                }, 600);
-                setTimeout(() => {
-                    click = true;
-                }, 1700);
-
-                setTimeout(() => {
-                    if (svg) {
-                        for (j = 1; j <= 9; j++) {
-                            var c = document.getElementById(transitionPrefix + j);
-                            c.classList.remove("streak");
-                            c.setAttribute("class", transitionPrefix + j + " steap");
+                        else {
+                            let active_tab = document.querySelector("nav a.active");
+                            if (active_tab) active_tab.classList.remove("active");
+                            nav.style.position = "static";
+                            nav.style.top = `${vh(100) - nav_height}`;
+                            nav.transition = "0.5s linear";
                         }
-                    } else {
-                        for (j = 10; j <= 18; j++) {
-                            var c = document.getElementById(transitionPrefix + j);
-                            c.classList.remove("streak");
-                            c.setAttribute("class", transitionPrefix + j + " steap");
-                        }
-                        sliding = true;
-                    }
-                }, 850);
-                setTimeout(() => {
-                    click = true;
-                }, 1700);
+
+                        content_pages.forEach((page, idx) => {
+                            let { top, bottom } = offset(page);
+                            if (scroll_position >= top - nav_height && scroll_position <= bottom - nav_height) {
+                                let active_tab = document.querySelector("nav a.active");
+                                if (active_tab) active_tab.classList.remove("active");
+                                tabs[idx + 1].classList.add("active");
+                            }
+                        })
+
+                        ticking = false;
+                    });
+
+                    ticking = true;
+                }
+            });
+
+            function hide_tabs() {
+                if (window.innerWidth <= md) {
+                    tabs.forEach(tab => {
+                        tab.classList.add("hidden");
+                    });
+                }
             }
-        }
 
-        left.onmousedown = () => {
-            leftSlide();
-        };
+            hide_tabs();
 
-        right.onmousedown = () => {
-            rightSlide();
-        };
-
-        document.onkeydown = e => {
-            if (e.keyCode == 37) {
-                leftSlide();
-            } else if (e.keyCode == 39) {
-                rightSlide();
+            window.onresize = e => {
+                if (window.innerWidth <= md)
+                    tabs.forEach(tab => {
+                        tab.classList.add("hidden");
+                    });
+                else
+                    tabs.forEach(tab => {
+                        tab.classList.remove("hidden");
+                    });
             }
-        };
 
-//for codepen header
-// setTimeout(() => {
-//  rightSlide();
-// }, 500);
+            menu_btn.onclick = e => {
+                if (window.innerWidth <= md) {
+                    tabs.forEach(tab => {
+                        tab.classList.toggle("hidden");
+                    });
+                }
+            }
+        });
     </script>
+    <section id="intro" class="page">
+        <div id="intro-title">
+            <b>&nbsp;&nbsp;&nbsp;&nbsp;P E R S O N A L&nbsp;&nbsp;&nbsp;&nbsp;P R O J E C T S
+                &nbsp;&nbsp;&nbsp;&nbsp;</b>
+        </div>
+        <div id="intro-description">
+            4 Personal Projects By Charlie
+        </div>
+    </section>
+
+    <nav>
+        <a class="menu-btn">
+
+        </a>
+        <a class="tab placeholder"></a>
+        <a class="tab" data-text="어떤 이어폰을 사야 잘 샀다고 소문이 날까?" href="#one">Module 1</a>
+        <a class="tab" data-text="셧다운제에 대한 나의 생각" href="#two">Module 2</a>
+        <a class="tab" data-text="시각장애인을 위한 점자 키보드" href="#three">Module 3</a>
+        <a class="tab" data-text="수전사로 신발 커스텀하기" href="#four">Module 4</a>
+        <a class="tab" href="./index.html" data-text="메인 화면으로" id="user-btn">Back to Main</a>
+
+    </nav>
+
+    <a name="one"></a>
+    <section class="page content-page">
+        <div>
+            Why?
+        </div>
+    </section>
+
+    <a name="two"></a>
+    <section name="two" class="page content-page">
+        <div>
+            What?
+        </div>
+    </section>
+
+    <a name="three"></a>
+    <section name="three" class="page content-page">
+        <div>
+            How?
+        </div>
+    </section>
+
+    <a name="four"></a>
+    <section name="four" class="page content-page">
+        <div>
+            Results
+        </div>
+    </section>
 
 </body>
 
