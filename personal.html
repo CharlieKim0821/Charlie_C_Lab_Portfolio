@@ -11,14 +11,13 @@
         @import url('https://fonts.googleapis.com/css?family=Montserrat:300|Spartan&display=swap');
 
         @font-face {
-            font-family: 'Wemakeprice-Bold';
-            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Wemakeprice-Bold.woff') format('woff');
+            font-family: 'GmarketSansMedium';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
             font-weight: normal;
             font-style: normal;
         }
 
         * {
-            font-family: 'Montserrat', serif;
             box-sizing: border-box;
         }
 
@@ -35,6 +34,8 @@
         }
 
         .page {
+            font-family: 'Montserrat', serif;
+
             color: black;
             width: 100vw;
             height: calc(100vh - 4.5rem);
@@ -44,7 +45,6 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
         }
 
         nav~.content-page {
@@ -75,6 +75,7 @@
         }
 
         nav {
+            font-family: 'Montserrat', serif;
             position: absolute;
             top: calc(100vh - 4.5rem);
             width: 100vw;
@@ -148,7 +149,7 @@
 
         nav a.tab:not(.placeholder)::before,
         nav a.tab:not(.placeholder)::after {
-            font-family: 'Wemakeprice-Bold';
+            font-family: 'GmarketSansMedium';
             position: absolute;
             top: 0;
             left: 0;
@@ -203,10 +204,177 @@
         nav.hidden {
             transform: translateX(-100%);
         }
+
+        img {
+            border: solid #F3904F;
+            border-radius: 30px;
+            margin: 50px;
+        }
+
+        .project1 {
+            font-family: 'GmarketSansMedium';
+            display: flex;
+            flex-direction: row;
+        }
+
+        .name {
+            font-size: 30px;
+            margin-bottom: 40px;
+            margin-top: 50px;
+        }
+
+        .things1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .naeyong {
+            font-size: 20px;
+            margin: 30px;
+        }
+
+        .content {
+            margin-top: 30px;
+        }
+
+        .project2 {
+            font-family: 'GmarketSansMedium';
+            display: flex;
+            flex-direction: row;
+            border-radius: 40px;
+        }
+
+
+
+        .things2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+
+        .project3 {
+            font-family: 'GmarketSansMedium';
+            display: flex;
+            flex-direction: row;
+            border-radius: 40px;
+        }
+
+
+        .things3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .project4 {
+            font-family: 'GmarketSansMedium';
+            display: flex;
+            flex-direction: row;
+            border-radius: 40px;
+        }
+
+
+
+        .things4 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     </style>
 </head>
 
 <body>
+
+
+    <section id="intro" class="page">
+        <div id="intro-title">
+            <b>&nbsp;&nbsp;&nbsp;&nbsp;P E R S O N A L&nbsp;&nbsp;&nbsp;&nbsp;P R O J E C T S
+                &nbsp;&nbsp;&nbsp;&nbsp;</b>
+        </div>
+        <div id="intro-description">
+            4 Personal Projects By Charlie
+        </div>
+    </section>
+
+    <nav>
+        <a class="menu-btn">
+
+        </a>
+        <a class="tab placeholder"></a>
+        <a class="tab" data-text="어떤 이어폰을 사야 잘 샀다고 소문이 날까?" href="#one">Module 1</a>
+        <a class="tab" data-text="게임 시간 선택제 이대로 괜찮은가?" href="#two">Module 2</a>
+        <a class="tab" data-text="시각장애인을 위한 점자 키보드" href="#three">Module 3</a>
+        <a class="tab" data-text="수전사로 신발 커스텀하기" href="#four">Module 4</a>
+        <a class="tab" href="./index.html" data-text="메인 화면으로" id="user-btn">Back to Main</a>
+
+    </nav>
+
+    <a name="one"></a>
+    <section class="page content-page">
+        <div class="project1">
+            <img src="./pm1new.PNG" width="600px" height="450px">
+            <div class="things1">
+                <div class="name">어떤 이어폰을 사야 잘 샀다고 소문이 날까?</div>
+                <div class="naeyong">나의 첫 개인주제 프로젝트. 당시 관심사가 이어폰, 음향기기 분야였기에 단순히 개인의 관심사를 통해서 주제를 선정하고
+                    진행한 부분이 눈에 띈다.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <a name="two"></a>
+    <section name="two" class="page content-page">
+        <div class="project2">
+            <img src="./pm2new.PNG" width="600px" height="450px">
+            <div class="things2">
+                <div class="name">게임 시간 선택제 이대로 괜찮은가?</div>
+                <div class="naeyong">나의 두번째 개인주제 프로젝트. 그저 관심사의 정보 전달 차원에 그친 전 모듈의 프로젝트와는 달리 관심사에 대한 사회적
+                    문제점에 대한 본인의 생각을 담아내게 되면서 한 층 더 발전한 느낌이 든다.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <a name="three"></a>
+    <section name="three" class="page content-page">
+        <div class="project3">
+            <img src="./pm3new.PNG" width="600px" height="450px">
+            <div class="things3">
+                <div class="name">시각장애인을 위한 점자 키보드</div>
+                <div class="naeyong">
+                    <div class="why3">Why? 현재 판매되는 점자 키보드들의 가격이 너무 비싸다</div>
+                    <div class="what3">What? 시각장애인 분들의 미디어 이용률이 낮다</div>
+                    <div class="how3">How? 저렴한 가격의 점자 키보드를 제작한다</div>
+                    <div class="content">Why? What? How?로 기둥을 세우고 시작을 하게 되었다. 왜 이 프로젝트를 진행하는지, 무엇을, 어떻게 할 것인지에 대한
+                        계획을 세우며 프로젝트를 진행했었다.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <a name="four"></a>
+    <section name="four" class="page content-page">
+        <div class="project4">
+            <img src="./pm4new.PNG" width="600px" height="450px">
+            <div class="things4">
+                <div class="name">수전사로 신발 커스텀하기</div>
+                <div class="naeyong">
+                    <div class="why4">Why? 상품성이 있는 제품을 제작하고 판매해보는 경험을 쌓기 위해서</div>
+                    <div class="what4">What? 나만의 개성있는 커스텀 신발을 제작한다</div>
+                    <div class="how4">How? 수전사를 통해서 커스텀 작업을 진행한다</div>
+                    <div class="content">나의 개인 프로젝트 중 가장 만족스러웠던 프로젝트다. 지금까지 배운 대부분의 것들이 결합되어 있고,
+                        눈에 보이는 결과물이 있었기 때문에 성취감이 들었던 프로젝트다.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <script>
         document.addEventListener("DOMContentLoaded", e => {
@@ -299,57 +467,6 @@
             }
         });
     </script>
-    <section id="intro" class="page">
-        <div id="intro-title">
-            <b>&nbsp;&nbsp;&nbsp;&nbsp;P E R S O N A L&nbsp;&nbsp;&nbsp;&nbsp;P R O J E C T S
-                &nbsp;&nbsp;&nbsp;&nbsp;</b>
-        </div>
-        <div id="intro-description">
-            4 Personal Projects By Charlie
-        </div>
-    </section>
-
-    <nav>
-        <a class="menu-btn">
-
-        </a>
-        <a class="tab placeholder"></a>
-        <a class="tab" data-text="어떤 이어폰을 사야 잘 샀다고 소문이 날까?" href="#one">Module 1</a>
-        <a class="tab" data-text="셧다운제에 대한 나의 생각" href="#two">Module 2</a>
-        <a class="tab" data-text="시각장애인을 위한 점자 키보드" href="#three">Module 3</a>
-        <a class="tab" data-text="수전사로 신발 커스텀하기" href="#four">Module 4</a>
-        <a class="tab" href="./index.html" data-text="메인 화면으로" id="user-btn">Back to Main</a>
-
-    </nav>
-
-    <a name="one"></a>
-    <section class="page content-page">
-        <div>
-            Why?
-        </div>
-    </section>
-
-    <a name="two"></a>
-    <section name="two" class="page content-page">
-        <div>
-            What?
-        </div>
-    </section>
-
-    <a name="three"></a>
-    <section name="three" class="page content-page">
-        <div>
-            How?
-        </div>
-    </section>
-
-    <a name="four"></a>
-    <section name="four" class="page content-page">
-        <div>
-            Results
-        </div>
-    </section>
-
 </body>
 
 </html>
