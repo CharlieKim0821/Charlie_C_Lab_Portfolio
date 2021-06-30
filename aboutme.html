@@ -29,7 +29,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 100%;
+            flex: 1;
             height: 100vh;
             background: linear-gradient(-90deg, #606c88, #3f4c6b);
         }
@@ -42,8 +42,8 @@
 
         .card {
             position: relative;
-            width: 50rem;
-            height: 35rem;
+            width: 30rem;
+            height: 45rem;
             perspective: 150rem;
         }
 
@@ -56,8 +56,8 @@
             align-items: center;
             justify-content: center;
             margin: auto;
-            border-radius: 5px;
-            box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+            border-radius: 20px;
+            box-shadow: 2rem 2rem 2rem 2rem rgba(0, 0, 0, 0.4);
             transition: 0.9s cubic-bezier(0.25, 0.8, 0.25, 1);
             backface-visibility: hidden;
             overflow: hidden;
@@ -104,8 +104,9 @@
         }
 
         .card-back {
-            background: linear-gradient(45deg, #eacda3, #FFEFBA, #eacda3);
-            transform: rotateX(180deg);
+
+            background-color: white;
+            transform: rotateX(-180deg);
             font-size: 30px;
         }
 
@@ -114,7 +115,7 @@
         }
 
         .card:hover .card-front {
-            transform: rotateX(-180deg);
+            transform: rotateX(180deg);
         }
 
         .card:hover .card-back {
@@ -136,7 +137,7 @@
             무슨 내용을 넣을까 엄청엄청나게 고민중
         </div>
         <div class="card-front">
-            Hover me!
+            <img src="./card.jpg" width="500px" height="730px">
         </div>
     </div>
 </body>
