@@ -14,35 +14,12 @@
 
         @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 
-        a {
-            text-decoration: none;
-            color: black;
-        }
-
-        a,
-        a:link {
-            cursor: url('./cursor.cur'), auto;
-        }
-
-        a:visited {
-            text-decoration: none;
-        }
-
-
-        a:focus {
-            text-decoration: none;
-        }
-
-
-        a:active {
-            text-decoration: none;
-        }
 
 
         body {
             font-family: 'Open Sans', sans-serif;
             margin: 0;
-            background: linear-gradient(-90deg, #F1F2B5, #135058);
+            background: linear-gradient(-90deg, #355C7D, #6C5B7B, #C06C84);
         }
 
         .content-section--fullpage {
@@ -52,12 +29,12 @@
             justify-content: center;
             flex: 1;
             height: 100vh;
-            background: linear-gradient(-90deg, #F1F2B5, #135058);
+            background: linear-gradient(-90deg, #355C7D, #6C5B7B, #C06C84);
         }
 
         .between {
             height: 30vh;
-            background: linear-gradient(-90deg, #F1F2B5, #135058);
+            background: linear-gradient(-90deg, #355C7D, #6C5B7B, #C06C84);
             position: relative;
             display: flex;
         }
@@ -123,115 +100,155 @@
 
         /*여기까지 스크롤 이벤트*/
 
-        html,
-        body {
-            height: 100%;
-        }
-
-        body {
-            display: grid;
-            font-family: Avenir, sans-serif;
-            -ms-text-size-adjust: 100%;
-            -webkit-text-size-adjust: 100%;
-            -moz-osx-font-smoothing: grayscale;
-            -moz-font-smoothing: antialiased;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        .MyCards {
-            position: absolute;
-            top: 45%;
-            left: 45%;
-            margin: -140px 0 0 -140px;
-            user-select: none;
-            transform: translate3d(0, 0, 0);
-            transform-style: preserve-3d;
-            text-align: center;
+        .projects {
+            display: flex;
+            flex: 1;
             align-items: center;
         }
 
-        .MyCards:after {
-            position: absolute;
-            bottom: -27px;
-            left: 5%;
-            content: '';
-            width: 65%;
-            height: 10px;
-            border-radius: 100%;
-            background-image: radial-gradient(rgba(34, 50, 84, 0.04), rgba(34, 50, 84, 0));
+        .fill:hover,
+        .fill:focus {
+            box-shadow: 0 0 0 6em var(--hover) inset, 20px 20px 20px black;
         }
 
-        .MyCards>div {
-            position: relative;
-            width: 500px;
+        .fill2:hover,
+        .fill2:focus {
+            box-shadow: 0 0 0 6em var(--hover) inset, 20px 20px 20px black;
+        }
+
+        .fill3:hover,
+        .fill3:focus {
+            box-shadow: 0 0 0 6em var(--hover) inset, 20px 20px 20px black;
+        }
+
+
+
+        .fill {
+            width: 300px;
             height: 300px;
-            border-radius: 12px;
+            border-radius: 100%;
+            background: #213E70;
             color: #fff;
-            transform: rotateX(45deg) rotateY(-15deg) rotate(45deg);
-            transition: all 0.3s ease;
-            overflow: hidden;
-            cursor: pointer;
+            font-family: 'Archivo', sans-serif;
+            font-size: 35px;
+            text-shadow: 0px 2px 2px black;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-align: center;
+            --hover: #192e52;
         }
 
-        .MyCards>div:after {
-            position: absolute;
-            top: -70px;
-            left: 0;
-            content: '';
-            width: 200%;
-            height: 200%;
-            background-image: linear-gradient(60deg, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0) 80%);
-            transform: translateX(-100%);
+        .fill2 {
+            width: 300px;
+            height: 300px;
+            border-radius: 100%;
+            background: #81AEC6;
+            color: #fff;
+            font-family: 'Archivo', sans-serif;
+            font-size: 35px;
+            text-shadow: 0px 2px 2px black;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-align: center;
+
+            --hover: rgb(89, 136, 155);
         }
 
-        .MyCards>div h3 {
-            position: absolute;
-            bottom: 28px;
-            left: 15px;
-            font-size: 30px;
-            width: 500px;
-            height: 500px;
+        .fill3 {
+            width: 300px;
+            height: 300px;
+            border-radius: 100%;
+            background: #CAE2E1;
+            color: #fff;
+            font-family: 'Archivo', sans-serif;
+            font-size: 35px;
+            text-shadow: 0px 2px 2px black;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-align: center;
+
+            --hover: #a2b6b5;
         }
 
-        .MyCards>div span {
+        button {
+            color: var(--color);
+            transition: 0.5s;
+            border: none;
+
+        }
+
+        button:hover {
+            border-color: var(--hover);
+            transition: 0.5s;
+            color: #fff;
+        }
+
+        button {
+            margin: 50px;
+        }
+
+        h1 {
+            font-family: 'Abel', sans-serif;
+            padding: 0 10px;
+            text-align: center;
+            text-shadow: 0px 2px 2px black;
+            font-size: 50px;
             color: white;
-            text-shadow: black;
-            position: absolute;
-            bottom: 15px;
-            left: 15px;
-            font-size: 30px;
-            opacity: 0.8;
-        }
-
-        .MyCards>div.aboutme {
-            margin-top: 0;
-            z-index: 3;
-            background-image: url(./card1.jpg);
-            box-shadow: 20px 20px 60px rgba(92, 92, 92, 0.5), 1px 1px 0px 1px #3b3b3b;
-        }
-
-        .MyCards>div.teamproject {
-            margin-top: -100px;
-            z-index: 2;
-            background-image: url(./card2.jpg);
-            box-shadow: 20px 20px 60px rgba(92, 92, 92, 0.5), 1px 1px 0px 1px #3b3b3b;
-        }
-
-        .MyCards>div.personalproject {
-            margin-top: -100px;
-            z-index: 1;
-            background-image: url(./card3.jpg);
-            box-shadow: 20px 20px 60px rgba(92, 92, 92, 0.5), 1px 1px 0px 1px #3b3b3b;
         }
 
 
-        .MyCards>div:hover {
-            transform: rotateX(30deg) rotateY(-15deg) rotate(30deg) translate(-25px, 50px);
-        }
+        @media (max-width :900px) {
 
-        .MyCards>div:hover:after {
-            transform: translateX(100%);
-            transition: all 1.2s ease-in-out;
+            .projects {
+                text-align: center;
+            }
+
+            .fill {
+                width: 200px;
+                height: 200px;
+                border-radius: 100%;
+                background: #213E70;
+                color: #fff;
+                font-family: 'Archivo', sans-serif;
+                font-size: 25px;
+                text-shadow: 0px 1px 1px silver;
+                font-weight: 700;
+                letter-spacing: 1px;
+                text-align: center;
+                --hover: #192e52;
+            }
+
+            .fill2 {
+                width: 200px;
+                height: 200px;
+                border-radius: 100%;
+                background: #81AEC6;
+                color: #fff;
+                font-family: 'Archivo', sans-serif;
+                font-size: 25px;
+                text-shadow: 0px 1px 1px silver;
+                font-weight: 700;
+                letter-spacing: 1px;
+                text-align: center;
+
+                --hover: rgb(89, 136, 155);
+            }
+
+            .fill3 {
+                width: 200px;
+                height: 200px;
+                border-radius: 100%;
+                background: #CAE2E1;
+                color: #fff;
+                font-family: 'Archivo', sans-serif;
+                font-size: 25px;
+                text-shadow: 0px 1px 1px silver;
+                font-weight: 700;
+                letter-spacing: 1px;
+                text-align: center;
+
+                --hover: #a2b6b5;
+            }
         }
     </style>
 </head>
@@ -254,35 +271,18 @@
 
     <section class="content-section--fullpage2">
         <section class="portfolio-experiment">
-            <div class="MyCards">
-
-                <div class="aboutme">
-                    <a href="aboutme.html">
-                        <h3>About me</h3>
-                        <span>About me</span>
-                    </a>
-                </div>
-
-
-                <div class="teamproject">
-                    <a href="https://charliekim0821.github.io/BLC-Web/index.html">
-                        <h3>Team Projects</h3>
-                        <span>Team project</span>
-                    </a>
-                </div>
-
-
-
-                <div class="personalproject">
-                    <a href="personal.html">
-                        <h3>Personal Projects</h3>
-                        <span>Personal projects</span>
-                    </a>
-                </div>
-
+            <h1>Contents...</h1>
+            <div class="Projects">
+                <a href="personal.html">
+                    <button class="fill">Personal</button>
+                </a>
+                <a href="https://charliekim0821.github.io/BLC-Web/index.html">
+                    <button class="fill2">Team (Current)</button>
+                </a>
+                <a href="aboutme.html">
+                    <button class="fill3">About</button>
+                </a>
             </div>
-
-
 
         </section>
     </section>
