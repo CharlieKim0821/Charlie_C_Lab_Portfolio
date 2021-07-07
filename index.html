@@ -16,6 +16,13 @@
 
         @import url('https://fonts.googleapis.com/css?family=Montserrat:300|Spartan&display=swap');
 
+        @font-face {
+            font-family: 'GoyangIlsan';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GoyangIlsan.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
 
         a {
             text-decoration: none;
@@ -44,7 +51,8 @@
 
         body {
             margin: 0;
-            background: linear-gradient(-270deg, #2980B9, #6DD5FA, #FFFFFF);
+            background: linear-gradient(-270deg, #FEAC5E, #C779D0, #4BC0C8) no-repeat;
+
         }
 
         .content-section--fullpage {
@@ -54,12 +62,12 @@
             justify-content: center;
             flex: 1;
             height: 100vh;
-            background: linear-gradient(-270deg, #2980B9, #6DD5FA, #FFFFFF);
+            background: linear-gradient(-270deg, #FEAC5E, #C779D0, #4BC0C8);
         }
 
         .between {
             height: 30vh;
-            background: linear-gradient(-270deg, #2980B9, #6DD5FA, #FFFFFF);
+            background: linear-gradient(-270deg, #FEAC5E, #C779D0, #4BC0C8);
             position: relative;
             display: flex;
         }
@@ -81,7 +89,7 @@
             align-items: center;
             justify-content: center;
             flex: 1;
-            height: 130vh;
+            height: 100vh;
         }
 
 
@@ -125,115 +133,91 @@
 
 
         /*여기까지 스크롤 이벤트*/
-
-        html,
-        body {
-            height: 100%;
+        .bigbox {
+            display: flex;
+            flex-direction: row;
+            font-family: 'GoyangIlsan'
         }
 
-        body {
-            display: grid;
-            font-family: Avenir, sans-serif;
-            -ms-text-size-adjust: 100%;
-            -webkit-text-size-adjust: 100%;
-            -moz-osx-font-smoothing: grayscale;
-            -moz-font-smoothing: antialiased;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        .MyCards {
-            position: absolute;
-            top: 45%;
-            left: 45%;
-            margin: -140px 0 0 -140px;
-            user-select: none;
-            transform: translate3d(0, 0, 0);
-            transform-style: preserve-3d;
-            text-align: center;
+        .box-wrap {
+            width: 100%;
+            height: 80vh;
+            display: flex;
             align-items: center;
+            justify-content: center;
         }
 
-        .MyCards:after {
-            position: absolute;
-            bottom: -27px;
-            left: 5%;
-            content: '';
-            width: 65%;
-            height: 10px;
-            border-radius: 100%;
-            background-image: radial-gradient(rgba(34, 50, 84, 0.04), rgba(34, 50, 84, 0));
-        }
-
-        .MyCards>div {
+        .box {
+            box-shadow: 10px 10px 10px black;
             position: relative;
+            background: #000;
             width: 500px;
             height: 300px;
-            border-radius: 12px;
-            color: #fff;
-            transform: rotateX(45deg) rotateY(-15deg) rotate(45deg);
-            transition: all 0.3s ease;
-            overflow: hidden;
+            border-radius: 20px;
+            margin: 50px;
+            border: solid black;
             cursor: pointer;
-            box-shadow: 30px black;
+            overflow: hidden;
         }
 
-        .MyCards>div:after {
+        .box img {
+            width: 100%;
+            display: block;
+            transition: all 0.3s ease-in-out;
             position: absolute;
-            top: -70px;
+            transform: scale(1);
+            transition: all 0.35s ease;
+        }
+
+        .box .info {
+            position: absolute;
             left: 0;
-            content: '';
-            width: 200%;
-            height: 200%;
-            background-image: linear-gradient(60deg, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0) 80%);
-            transform: translateX(-100%);
+            bottom: 0;
+            z-index: 10;
+            color: #fff;
+            background: rgba(0, 0, 0, 0.6);
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transform: scale(0);
+            transition: all 0.35s ease;
         }
 
-        .MyCards>div h3 {
+        .box .info h3 {
+            font-size: 24px;
+            color: #fff;
             position: absolute;
-            bottom: 28px;
-            left: 15px;
-            font-size: 30px;
-            width: 500px;
-            height: 500px;
+            left: 30px;
+            top: 5px;
         }
 
-        .MyCards>div span {
-            color: white;
-            text-shadow: black;
+        .box .info p {
+            font-size: 20px;
+            color: #fff;
             position: absolute;
-            bottom: 15px;
-            left: 15px;
-            font-size: 30px;
+            top: 100px;
+            margin: 30px;
+
         }
 
-        .MyCards>div.aboutme {
-            margin-top: 0;
-            z-index: 3;
-            background-image: url(./card1.jpg);
-            box-shadow: 20px 20px 60px rgba(92, 92, 92, 0.5), 1px 1px 0px 1px #3b3b3b;
+        .box:hover {
+            transform: rotate(10deg);
+            transition: 0.5s;
         }
 
-        .MyCards>div.teamproject {
-            margin-top: -100px;
-            z-index: 2;
-            box-shadow: 20px 20px 60px rgba(92, 92, 92, 0.5), 1px 1px 0px 1px #3b3b3b;
+        .box:hover .info {
+            opacity: 1;
+            transform: scale(1);
         }
 
-        .MyCards>div.personalproject {
-            margin-top: -100px;
-            z-index: 1;
-            background-image: url(./card3.jpg);
-            box-shadow: 20px 20px 60px rgba(92, 92, 92, 0.5), 1px 1px 0px 1px #3b3b3b;
+        .box:hover img {
+            display: none;
+
         }
 
-
-        .MyCards>div:hover {
-            transform: rotateX(30deg) rotateY(-15deg) rotate(30deg) translate(-25px, 50px);
-        }
-
-        .MyCards>div:hover:after {
-            transform: translateX(100%);
-            transition: all 1.2s ease-in-out;
+        .gschool {
+            background-color: gainsboro;
+            width: 100%;
         }
     </style>
 </head>
@@ -256,32 +240,48 @@
 
     <section class="content-section--fullpage2">
         <section class="portfolio-experiment">
-            <div class="MyCards">
-
-                <div class="aboutme">
-                    <a href="aboutme.html">
-                        <div> <img src="./card1.jpg" width="500px" height="300px">
+            <div class="bigbox">
+                <div class="box-wrap">
+                    <a href="./aboutme.html">
+                        <div class="box about">
+                            <div class="img">
+                                <img src="./card1.jpg" alt="Hover Effect">
+                            </div>
+                            <div class="info">
+                                <h3>찰리는 누구인가?</h3>
+                                <p>안녕하세요 이 웹사이트의 주인, 하고 싶은 일이 많은 16세 청소년 찰리입니다. 저에 대해서 알아보고 싶으시다면 카드를 눌러주세요!</p>
+                            </div>
                         </div>
                     </a>
-                </div>
+                    <a href="./personal.html">
+                        <div class=" box like">
+                            <div class="img">
+                                <img class="gschool" src="./gschoollogo.png" alt="Hover Effect">
+                            </div>
+                            <div class="info">
+                                <h3>개인주제 프로젝트</h3>
+                                <p>거꾸로캠퍼스에서 진행한 4가지 개인주제 프로젝트
+                                </p>
 
+                            </div>
+                        </div>
+                    </a>
 
-                <div class="teamproject">
                     <a href="https://charliekim0821.github.io/BLC-Web/index.html">
-                        <div> <img src="./card2.png" width="500px" height="300px">
+
+                        <div class="box project">
+                            <div class="img">
+                                <img src="./card2.png" alt="Hover Effect">
+                            </div>
+                            <div class="info">
+                                <h3>Team BLC (팀 프로젝트)</h3>
+                                <p>사람들이 현대사회의 심각한 질병인 비만의 위험성을 인지하지 못하고 있다는 생각에서 시작된 문제정의 프로젝트.
+                                    (카드를 누르면 개발 중인 웹사이트로 이동합니다)
+                                </p>
+                            </div>
                         </div>
                     </a>
                 </div>
-
-
-
-                <div class="personalproject">
-                    <a href="personal.html">
-                        <div> <img src="./card3.jpg" width="500px" height="300px">
-                        </div>
-                    </a>
-                </div>
-
             </div>
 
 
@@ -289,7 +289,7 @@
         </section>
     </section>
 
-    <div class=""></div>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>
@@ -362,13 +362,13 @@
 
         /**/
 
-        const division = gsap.utils.toArray(".MyCards")
+        const division = gsap.utils.toArray(".box")
 
-        division.forEach((MyCards) => gsap.fromTo(MyCards, { opacity: 0 }, {
-            // duration: 2,
+        division.forEach((box) => gsap.fromTo(box, { opacity: 0 }, {
+            duration: 3,
             opacity: 1,
             scrollTrigger: {
-                trigger: MyCards,
+                trigger: box,
                 // markers: true,
                 scrub: 1,
                 // scrollActions: "restart none none reverse",

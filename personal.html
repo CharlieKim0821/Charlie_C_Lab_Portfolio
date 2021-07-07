@@ -26,7 +26,7 @@
         }
 
         body {
-            background: linear-gradient(-270deg, #2980B9, #6DD5FA, #FFFFFF);
+            background: linear-gradient(-270deg, #FEAC5E, #C779D0, #4BC0C8);
             height: 100vh;
             width: 100%;
             margin: 0;
@@ -114,6 +114,7 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
+            z-index: 99;
         }
 
         @media (max-width: 720px) {
@@ -203,6 +204,7 @@
         nav a.tab:not(.placeholder)::after {
             content: attr(data-text);
             color: #F3904F;
+            font-size: 18px;
             background: #1d5a83;
         }
 
@@ -236,6 +238,7 @@
 
         img {
             border: solid#000000;
+            box-shadow: 20px 20px 20px;
             border-radius: 30px;
             margin: 50px;
         }
@@ -337,6 +340,7 @@
             }
 
             .name {
+                font-style: bold;
                 font-size: 20px;
             }
 
@@ -420,8 +424,8 @@
 
     <a name="one"></a>
     <section class="page content-page">
-        <div class="project1">
-            <img src="./pm1new.PNG" width="600px" height="450px">
+        <div class="project1 gsapyong">
+            <img class="image" src="./pm1new.PNG" width="600px" height="450px">
             <div class="things1">
                 <div class="name">이어폰 구매 꿀팁!</div>
                 <div class="naeyong">
@@ -438,8 +442,8 @@
 
     <a name="two"></a>
     <section name="two" class="page content-page">
-        <div class="project2">
-            <img src="./pm2new.PNG" width="600px" height="450px">
+        <div class="project2 gsapyong">
+            <img class="image" src="./pm2new.PNG" width="600px" height="450px">
             <div class="things2">
                 <div class="name">게임 시간 선택제 이대로 괜찮은가?</div>
                 <div class="naeyong">나의 두번째 개인주제 프로젝트. 그저 관심사의 정보 전달 차원에 그친 전 모듈의 프로젝트와는 달리 관심사에 대한 사회적
@@ -456,8 +460,8 @@
 
     <a name="three"></a>
     <section name="three" class="page content-page">
-        <div class="project3">
-            <img src="./pm3new.PNG" width="600px" height="450px">
+        <div class="project3 gsapyong">
+            <img class="image" src="./pm3new.PNG" width="600px" height="450px">
             <div class="things3">
                 <div class="name">시각장애인을 위한 점자 키보드</div>
                 <div class="naeyong">
@@ -480,8 +484,8 @@
 
     <a name="four"></a>
     <section name="four" class="page content-page">
-        <div class="project4">
-            <img src="./pm4new.PNG" width="600px" height="450px">
+        <div class="project4 gsapyong">
+            <img class="image" src="./pm4new.PNG" width="600px" height="450px">
             <div class="things4">
                 <div class="name">수전사로 신발 커스텀하기</div>
                 <div class="naeyong">
@@ -595,6 +599,23 @@
                 }
             }
         });
+
+
+        const division = gsap.utils.toArray(".gsapyong")
+
+        division.forEach((gsapyong) => gsap.fromTo(gsapyong, { opacity: 0 }, {
+            duration: 3,
+            opacity: 1,
+            scrollTrigger: {
+                trigger: gsapyong,
+                // markers: true,
+                scrub: 1,
+                // scrollActions: "restart none none reverse",
+                start: "center bottom",
+                end: "center 35%"
+            }
+        }))
+
 
 
     </script>
