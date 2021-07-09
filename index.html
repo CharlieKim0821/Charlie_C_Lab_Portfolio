@@ -51,8 +51,7 @@
 
         body {
             margin: 0;
-            background: linear-gradient(-270deg, #FEAC5E, #C779D0, #4BC0C8) no-repeat;
-
+            background-color: black;
         }
 
         .content-section--fullpage {
@@ -62,17 +61,16 @@
             justify-content: center;
             flex: 1;
             height: 100vh;
-            background: linear-gradient(-270deg, #FEAC5E, #C779D0, #4BC0C8);
+            background-image: url(./seoul.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
         }
 
-        .between {
-            height: 30vh;
-            background: linear-gradient(-270deg, #FEAC5E, #C779D0, #4BC0C8);
-            position: relative;
-            display: flex;
-        }
+
 
         .about-me {
+
             position: relative;
             display: flex;
             align-items: center;
@@ -84,6 +82,10 @@
 
 
         .content-section--fullpage2 {
+            background-image: url(./seoul.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
             position: relative;
             display: flex;
             align-items: center;
@@ -100,13 +102,20 @@
 
         span {
             font-family: 'Montserrat', serif;
+            color: white;
             display: inline-block;
             box-sizing: border-box;
-            padding: 0 10px;
-            font-size: 35px;
+            padding: 0 25px;
+            font-size: 50px;
             text-shadow: 0px 1px 1px black;
             font-weight: 700;
             letter-spacing: 1px;
+        }
+
+        span:hover {
+            transition: 0.4s;
+            font-size: 51px;
+            text-shadow: 10px 10px 10px grey;
         }
 
 
@@ -133,98 +142,125 @@
 
 
         /*여기까지 스크롤 이벤트*/
-        .bigbox {
-            display: flex;
-            flex-direction: row;
-            font-family: 'GoyangIlsan'
+        @import url(https://fonts.googleapis.com/css?family=Raleway);
+
+        .snip1584 {
+            font-family: 'Raleway', sans-serif;
+            position: relative;
+            display: inline-block;
+            overflow: hidden;
+            margin: 10px;
+            min-width: 230px;
+            max-width: 315px;
+            width: 100%;
+            color: #ffffff;
+            font-size: 16px;
+            text-align: left;
         }
 
-        .box-wrap {
-            width: 100%;
-            height: 80vh;
-            display: flex;
+        .snip1584 * {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-transition: all 0.25s ease;
+            transition: all 0.25s ease;
+        }
+
+        .snip1584:before {
+            position: absolute;
+            top: 10px;
+            bottom: 10px;
+            left: 10px;
+            right: 10px;
+            top: 100%;
+            content: '';
+            background-color: rgba(51, 51, 51, 0.9);
+            -webkit-transition: all 0.25s ease;
+            transition: all 0.25s ease;
+            -webkit-transition-delay: 0.25s;
+            transition-delay: 0.25s;
+        }
+
+        .snip1584 img {
+            vertical-align: top;
+            max-width: 100%;
+            backface-visibility: hidden;
+        }
+
+        .snip1584 figcaption {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
             align-items: center;
+            display: flex;
+            flex-direction: column;
             justify-content: center;
         }
 
-        .box {
-            box-shadow: 10px 10px 10px black;
-            position: relative;
-            background: #000;
-            width: 500px;
-            height: 300px;
-            border-radius: 20px;
-            margin: 50px;
-            border: solid black;
-            cursor: pointer;
-            overflow: hidden;
-        }
-
-        .box img {
-            width: 100%;
-            display: block;
-            transition: all 0.3s ease-in-out;
-            position: absolute;
-            transform: scale(1);
-            transition: all 0.35s ease;
-        }
-
-        .box .info {
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            z-index: 10;
-            color: #fff;
-            background: rgba(0, 0, 0, 0.6);
-            width: 100%;
-            height: 100%;
+        .snip1584 h3,
+        .snip1584 h5 {
+            margin: 0;
             opacity: 0;
-            transform: scale(0);
-            transition: all 0.35s ease;
+            letter-spacing: 1px;
         }
 
-        .box .info h3 {
-            font-size: 24px;
-            color: #fff;
+        .snip1584 h3 {
+            -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+            text-transform: uppercase;
+            font-weight: 400;
+            -webkit-transition-delay: 0.05s;
+            transition-delay: 0.05s;
+            margin-bottom: 5px;
+        }
+
+        .snip1584 h5 {
+            font-weight: normal;
+            background-color: #ae895d;
+            padding: 3px 10px;
+            -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+            -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+        }
+
+        .snip1584 a {
             position: absolute;
-            left: 30px;
-            top: 5px;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
         }
 
-        .box .info p {
-            font-size: 20px;
-            color: #fff;
-            position: absolute;
-            top: 100px;
-            margin: 30px;
-
+        .snip1584:hover:before,
+        .snip1584.hover:before {
+            top: 10px;
+            -webkit-transition-delay: 0s;
+            transition-delay: 0s;
         }
 
-        .box:hover {
-            transform: rotate(5deg);
-            transition: 0.5s;
-        }
-
-        .box:hover .info {
+        .snip1584:hover h3,
+        .snip1584.hover h3,
+        .snip1584:hover h5,
+        .snip1584.hover h5 {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
             opacity: 1;
-            transform: scale(1);
         }
 
-        .box:hover img {
-            display: none;
-
+        .snip1584:hover h3,
+        .snip1584.hover h3 {
+            -webkit-transition-delay: 0.3s;
+            transition-delay: 0.3s;
         }
 
-        .gschool {
-            background-color: gainsboro;
-            width: 100%;
-        }
-
-        @media(max-width:800px) {
-            .bigbox {
-                display: flex;
-                flex-direction: column;
-            }
+        .snip1584:hover h5,
+        .snip1584.hover h5 {
+            -webkit-transition-delay: 0.2s;
+            transition-delay: 0.2s;
         }
     </style>
 </head>
@@ -242,55 +278,36 @@
             Scroll
         </span>
     </section>
-    <section class="between"></section>
 
 
     <section class="content-section--fullpage2">
         <section class="portfolio-experiment">
-            <div class="bigbox">
-                <div class="box-wrap">
-                    <a href="./aboutme.html">
-                        <div class="box about">
-                            <div class="img">
-                                <img src="./card1.jpg" alt="Hover Effect">
-                            </div>
-                            <div class="info">
-                                <h3>찰리는 누구인가?</h3>
-                                <p>안녕하세요 이 웹사이트의 주인, 하고 싶은 일이 많은 16세 청소년 찰리입니다. 저에 대한 자세한 이야기는 카드를 눌러주세요!</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="./personal.html">
-                        <div class=" box like">
-                            <div class="img">
-                                <img class="gschool" src="./gschoollogo.png" alt="Hover Effect">
-                            </div>
-                            <div class="info">
-                                <h3>개인주제 프로젝트</h3>
-                                <p>거꾸로캠퍼스에서 진행한 4가지 개인주제 프로젝트
-                                </p>
+            <a href="./aboutme.html">
+                <figure class="snip1584"><img src="./card1.jpg" alt="sample87" />
+                    <figcaption>
+                        <h3>Charlie</h3>
+                        <h5>About me</h5>
+                    </figcaption>
+                </figure>
+            </a>
 
-                            </div>
-                        </div>
-                    </a>
+            <a href="https://charliekim0821.github.io/BLC-Web/index.html">
+                <figure class="snip1584"><img src="./card2.png" alt="sample119" />
+                    <figcaption>
+                        <h3>Team BLC</h3>
+                        <h5>Team Website</h5>
+                    </figcaption>
+                </figure>
+            </a>
 
-                    <a href="https://charliekim0821.github.io/BLC-Web/index.html">
-
-                        <div class="box project">
-                            <div class="img">
-                                <img src="./card2.png" alt="Hover Effect">
-                            </div>
-                            <div class="info">
-                                <h3>Team BLC (팀 프로젝트)</h3>
-                                <p>사람들이 현대사회의 심각한 질병인 비만의 위험성을 인지하지 못하고 있다는 생각에서 시작된 문제정의 프로젝트.
-                                    (카드를 누르면 개발 중인 웹사이트로 이동합니다)
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
+            <a href="./personal.html">
+                <figure class="snip1584"><img src="./gschoollogo.png" alt="sample120" />
+                    <figcaption>
+                        <h3>Personal Projects</h3>
+                        <h5>Module 1~4</h5>
+                    </figcaption>
+                </figure>
+            </a>
 
 
         </section>
