@@ -61,10 +61,11 @@
             justify-content: center;
             flex: 1;
             height: 100vh;
-            background-image: url(./seoul.jpg);
+            background-image: url(./seouldark.jpg );
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
+            filter: brightness(100%);
         }
 
 
@@ -82,7 +83,6 @@
 
 
         .content-section--fullpage2 {
-            background-image: url(./seoul.jpg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -110,11 +110,11 @@
             text-shadow: 0px 1px 1px black;
             font-weight: 700;
             letter-spacing: 1px;
+
         }
 
         span:hover {
             transition: 0.4s;
-            font-size: 51px;
             text-shadow: 10px 10px 10px grey;
         }
 
@@ -145,17 +145,18 @@
         @import url(https://fonts.googleapis.com/css?family=Raleway);
 
         .snip1584 {
-            font-family: 'Raleway', sans-serif;
+            font-family: 'Montserrat', serif;
             position: relative;
             display: inline-block;
             overflow: hidden;
-            margin: 10px;
-            min-width: 230px;
-            max-width: 315px;
+            margin: 100px;
+            min-width: 300px;
+            max-width: 400px;
             width: 100%;
             color: #ffffff;
             font-size: 16px;
             text-align: left;
+            box-shadow: 0px 0px 10px 10px #ae895d;
         }
 
         .snip1584 * {
@@ -209,7 +210,6 @@
         .snip1584 h3 {
             -webkit-transform: translateY(-100%);
             transform: translateY(-100%);
-            text-transform: uppercase;
             font-weight: 400;
             -webkit-transition-delay: 0.05s;
             transition-delay: 0.05s;
@@ -285,17 +285,8 @@
             <a href="./aboutme.html">
                 <figure class="snip1584"><img src="./card1.jpg" alt="sample87" />
                     <figcaption>
-                        <h3>Charlie</h3>
+                        <h3>Charlie Kim</h3>
                         <h5>About me</h5>
-                    </figcaption>
-                </figure>
-            </a>
-
-            <a href="https://charliekim0821.github.io/BLC-Web/index.html">
-                <figure class="snip1584"><img src="./card2.png" alt="sample119" />
-                    <figcaption>
-                        <h3>Team BLC</h3>
-                        <h5>Team Website</h5>
                     </figcaption>
                 </figure>
             </a>
@@ -309,6 +300,14 @@
                 </figure>
             </a>
 
+            <a href="https://charliekim0821.github.io/BLC-Web/index.html">
+                <figure class="snip1584"><img src="./card2.png" alt="sample119" />
+                    <figcaption>
+                        <h3>Team BLC</h3>
+                        <h5>Team Website</h5>
+                    </figcaption>
+                </figure>
+            </a>
 
         </section>
     </section>
@@ -386,13 +385,13 @@
 
         /**/
 
-        const division = gsap.utils.toArray(".box")
+        const division = gsap.utils.toArray(".snip1584")
 
-        division.forEach((box) => gsap.fromTo(box, { opacity: 0 }, {
+        division.forEach((snip1584) => gsap.fromTo(snip1584, { opacity: 0 }, {
             duration: 3,
             opacity: 1,
             scrollTrigger: {
-                trigger: box,
+                trigger: snip1584,
                 // markers: true,
                 scrub: 1,
                 // scrollActions: "restart none none reverse",
