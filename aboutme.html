@@ -3,196 +3,122 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Who</title>
-    <link rel="short icon" href="img/favicon.ico">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: black;
+
+        }
+
+        ul,
+        li {
+            list-style: none;
+        }
+
+        .slide {
+            background-color: black;
+            margin-top: 50px;
+            height: 90vh;
+            overflow: hidden;
+            z-index: 999;
+        }
+
+        .slide ul {
+            height: calc(100% * 4);
+            animation: slide 8s infinite;
+        }
+
+        .slide li {
+            height: calc(100% / 4);
+
+        }
+
+        .slide li:nth-child(1) {
+            background-image: url(./seouldark.jpg );
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            filter: brightness(100%);
+        }
+
+        .slide li:nth-child(2) {
+            background-image: url(./seouldark.jpg );
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            filter: brightness(100%);
+        }
+
+        .slide li:nth-child(3) {
+            background-image: url(./seouldark.jpg );
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            filter: brightness(100%);
+        }
+
+        .slide li:nth-child(4) {
+            background-image: url(./seouldark.jpg );
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            filter: brightness(100%);
+        }
+
+        @keyframes slide {
+            0% {
+                margin-top: 0;
+            }
+
+            10% {
+                margin-top: 0;
+            }
+
+            25% {
+                margin-top: -90vh;
+            }
+
+            35% {
+                margin-top: -90vh;
+            }
+
+            50% {
+                margin-top: -180vh;
+            }
+
+            60% {
+                margin-top: -180vh;
+            }
+
+            75% {
+                margin-top: -270vh;
+            }
+
+            85% {
+                margin-top: -270vh;
+            }
+
+            100% {
+                margin-top: 0;
+            }
+        }
+    </style>
 </head>
-<style>
-    @font-face {
-        font-family: 'GongGothicMedium';
-        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-    }
-
-    body {
-        font-family: 'GongGothicMedium';
-        margin: 0;
-        background: linear-gradient(0deg, #434343, #000000) no-repeat;
-
-    }
-
-    .section1 {
-        height: 800vw;
-    }
-
-    a {
-        text-decoration: none;
-        color: black;
-    }
-
-    a:visited {
-        text-decoration: none;
-    }
-
-
-    a:focus {
-        text-decoration: none;
-    }
-
-
-    a:active {
-        text-decoration: none;
-    }
-
-
-
-    .bigbox {
-        display: flex;
-        margin: auto;
-        flex-direction: column;
-    }
-
-    .contentbox {
-        position: relative;
-        text-align: center;
-        align-items: center;
-        font-size: 50px;
-        z-index: 99;
-        color: white;
-        margin: 100px;
-    }
-
-    .mainbutton {
-        position: fixed;
-        width: 80px;
-        height: 80px;
-        border-radius: 100%;
-        color: white;
-        border: solid 5px white;
-        text-align: center;
-        align-items: center;
-        line-height: 80px;
-        right: 50px;
-        bottom: 50px;
-    }
-
-
-
-    .emptyup {
-        height: 350px;
-    }
-
-    .empty {
-        height: 600px;
-    }
-
-
-
-    img {
-        display: flex;
-        position: absolute;
-        width: 100%;
-    }
-
-    @media(max-width:1200px) {
-        .contentbox {
-            width: 600px;
-            height: 300px;
-        }
-
-    }
-
-    @media(max-width:950px) {
-        .contentbox {
-            width: 400px;
-            height: 200px;
-        }
-
-    }
-</style>
 
 <body>
-
-    <section class="section1">
-        <div class="alldiv">
-            <div class="allcontent">
-                <a href="./index.html">
-                    <div class="mainbutton">Main</div>
-                </a>
-                <div class="bigbox">
-                    <div class="emptyup"></div>
-                    <div class="contentbox">안녕하세요! 찰리입니다</div>
-                    <div class="empty"></div>
-                    <div class="contentbox">저는 2006년 서울에서 태어났고,</div>
-                    <div class="empty"></div>
-                    <div class="contentbox">사교육의 성지라 불리는 양천구에서 초등시절을 보냈습니다.</div>
-                    <div class="empty"></div>
-                    <div class="contentbox">저는 6학년이 되자 사교육이 굉장히 싫어졌습니다.</div>
-                    <div class="empty"></div>
-                    <div class="contentbox">하지만 중학생이 되면 사교육은 더욱 늘어야 했기 때문에~</div>
-                    <div class="empty"></div>
-                    <div class="contentbox">단순히 학원이 싫어서 대안학교에 입학하게 되었습니다.</div>
-                    <div class="empty"></div>
-                    <div class="contentbox">하지만 이 대안학교를 다니다가 잘 맞지 않아서 학교를 나오게 되었고,</div>
-                    <div class="empty"></div>
-                    <div class="contentbox">거꾸로캠퍼스라는 실험학교를 알게 되어 입학을 하게 되었습니다.</div>
-                    <div class="empty"></div>
-                    <div class="contentbox">입학 초반에는 거의 놀다시피 지냈었습니다.</div>
-                    <div class="empty"></div>
-                    <div class="contentbox">학교 끝나자마자 게임하고, 집에 있는 동안은 틈만 나면 게임만 했었습니다.</div>
-                    <div class="empty"></div>
-                    <div class="contentbox">(덕분에 게임 실력은 좀 늘은 것 같네요)</div>
-                    <div class="empty"></div>
-                    <div class="contentbox">이렇게 방탕한(?) 삶을 즐기던 어느 순간,</div>
-                    <div class="empty"></div>
-                    <div class="contentbox">점점 내가 왜 대안학교를 선택했을까에 대한 고민,</div>
-                    <div class="empty"></div>
-                    <div class="contentbox">
-                        <p>성인이 되었을 때 나의 모습, 나는 앞으로 어떤 일을 하며</p>
-                        <p>살아가게 될까에 대한 고민들이 생기기 시작했습니다.</p>
-                    </div>
-                    <div class="empty"></div>
-                    <div class="contentbox">
-                        <p>그렇지만 이런 진지한 고민 한편으로는</p>
-                        <p>어떤 재미있는 일들이 저를 기다릴지도 고민이 됩니다.</p>
-                    </div>
-                    <div class="empty"></div>
-                    <div class="contentbox">
-                        <p>이루고 싶은 수많은 목표들을 향해 나아가는 찰리였습니다</p>
-                    </div>
-                    <div class="empty"></div>
-
-                    <div class="contentbox">
-                        <p>감사합니다!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>
-
-    <script>
-        const division = gsap.utils.toArray(".contentbox")
-
-        division.forEach((contentbox) => gsap.fromTo(contentbox, { opacity: 0 }, {
-            duration: 2,
-            opacity: 1,
-            scrollTrigger: {
-                trigger: contentbox,
-                // markers: true,
-                scrub: 1,
-                // scrollActions: "restart none none reverse",
-                start: "center bottom",
-                end: "center 35%"
-            }
-        }))
-
-    </script>
+    <div class="slide">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
 </body>
 
 </html>

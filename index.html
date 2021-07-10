@@ -54,6 +54,101 @@
             background-color: black;
         }
 
+        ul,
+        li {
+            list-style: none;
+        }
+
+        .slide {
+            background-color: black;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            position: absolute;
+            text-align: center;
+            align-items: center;
+        }
+
+        .slide ul {
+            height: calc(100% * 4);
+            animation: slide 8s infinite;
+        }
+
+        .slide li {
+            height: calc(100% / 4);
+
+        }
+
+        .slide li:nth-child(1) {
+            background-image: url(./night.jpg );
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            filter: brightness(100%);
+        }
+
+        .slide li:nth-child(2) {
+            background-image: url(./seoul.jpg );
+            background-repeat: no-repeat;
+            background-position: center;
+            filter: brightness(100%);
+            text-align: center;
+        }
+
+        .slide li:nth-child(3) {
+            background-image: url(./lamp.jpg );
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            filter: brightness(100%);
+        }
+
+        .slide li:nth-child(4) {
+            background-image: url(./gayang.jpg );
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            filter: brightness(100%);
+        }
+
+        @keyframes slide {
+            0% {
+                margin-top: 0;
+            }
+
+            10% {
+                margin-top: 0;
+            }
+
+            25% {
+                margin-top: -100vh;
+            }
+
+            35% {
+                margin-top: -100vh;
+            }
+
+            50% {
+                margin-top: -200vh;
+            }
+
+            60% {
+                margin-top: -200vh;
+            }
+
+            75% {
+                margin-top: -300vh;
+            }
+
+            85% {
+                margin-top: -300vh;
+            }
+
+            100% {
+                margin-top: 0;
+            }
+        }
+
         .content-section--fullpage {
             position: relative;
             display: flex;
@@ -126,6 +221,7 @@
             color: #DDE1E4;
             text-align: center;
             text-transform: uppercase;
+            position: relative;
         }
 
         .scroll-indicator {
@@ -269,8 +365,17 @@
 
 
     <section class="content-section--fullpage">
+        <div class="slide">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
         <div class="content-section__headline-container">
             <h1 class="content-section__headline">Charlie</h1>
+
         </div>
 
         <span class="scroll-indicator">
