@@ -208,6 +208,7 @@
 
         }
 
+
         span:hover {
             transition: 0.4s;
             text-shadow: 10px 10px 10px grey;
@@ -217,7 +218,6 @@
         .content-section__headline {
             margin: 0;
             opacity: 0;
-            font-weight: 700;
             color: #DDE1E4;
             text-align: center;
             text-transform: uppercase;
@@ -234,6 +234,8 @@
             text-transform: uppercase;
             letter-spacing: 1px;
         }
+
+
 
 
 
@@ -358,6 +360,24 @@
             -webkit-transition-delay: 0.2s;
             transition-delay: 0.2s;
         }
+
+        @media(max-width:900px) {
+            span {
+                font-size: 20px;
+                padding: 5px;
+            }
+
+            .snip1584 {
+                min-width: 200px;
+                max-width: 200px;
+                margin: 50px;
+            }
+
+            .portfolio-experiment {
+                display: flex;
+                flex-direction: column;
+            }
+        }
     </style>
 </head>
 
@@ -374,7 +394,9 @@
             </ul>
         </div>
         <div class="content-section__headline-container">
-            <h1 class="content-section__headline">Charlie</h1>
+            <h1 class="content-section__headline">
+                Charlie
+            </h1>
 
         </div>
 
