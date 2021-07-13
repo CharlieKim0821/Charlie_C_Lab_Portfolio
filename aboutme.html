@@ -5,6 +5,13 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <style>
+        @font-face {
+            font-family: 'Cafe24SsurroundAir';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -20,105 +27,66 @@
             list-style: none;
         }
 
-        .slide {
+
+
+        .aboutmesection {
+            height: 80vh;
             background-color: black;
-            margin-top: 50px;
-            height: 90vh;
-            overflow: hidden;
-            z-index: 999;
         }
 
-        .slide ul {
-            height: calc(100% * 4);
-            animation: slide 8s infinite;
+        .itsme {
+            font-family: 'Cafe24SsurroundAir';
+            height: 400px;
+            width: 60%;
+            margin-top: 50vh;
+            margin-left: auto;
+            margin-right: auto;
+            color: white;
+            display: flex;
+            flex-direction: row;
+            box-shadow: 0px 0px 20px 20px white;
+            align-items: center;
+            border-radius: 20px 20px 20px 20px;
         }
 
-        .slide li {
-            height: calc(100% / 4);
+        .mypicture {
+            margin-left: 100px;
 
         }
 
-        .slide li:nth-child(1) {
-            background-image: url(./seouldark.jpg );
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            filter: brightness(100%);
+        .meinfo {
+            font-size: 50px;
+            text-align: center;
+            margin-bottom: 50px;
         }
 
-        .slide li:nth-child(2) {
-            background-image: url(./seouldark.jpg );
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            filter: brightness(100%);
+        .empty {
+            width: 200px;
         }
 
-        .slide li:nth-child(3) {
-            background-image: url(./seouldark.jpg );
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            filter: brightness(100%);
-        }
-
-        .slide li:nth-child(4) {
-            background-image: url(./seouldark.jpg );
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            filter: brightness(100%);
-        }
-
-        @keyframes slide {
-            0% {
-                margin-top: 0;
-            }
-
-            10% {
-                margin-top: 0;
-            }
-
-            25% {
-                margin-top: -90vh;
-            }
-
-            35% {
-                margin-top: -90vh;
-            }
-
-            50% {
-                margin-top: -180vh;
-            }
-
-            60% {
-                margin-top: -180vh;
-            }
-
-            75% {
-                margin-top: -270vh;
-            }
-
-            85% {
-                margin-top: -270vh;
-            }
-
-            100% {
-                margin-top: 0;
-            }
+        .infotext {
+            font-size: 20px;
+            margin-bottom: 20px;
         }
     </style>
 </head>
 
 <body>
-    <div class="slide">
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </div>
+
+
+    <section class="aboutmesection">
+        <div class="itsme">
+            <div class="mypicture"><img src="./me.jpg" width="300px" height="300px"> </div>
+            <div class="empty"></div>
+            <div class="myinfo">
+                <div class="meinfo">About Charlie</div>
+                <div class="infotext">이름 :김윤겸</div>
+                <div class="infotext">생년월일 : 2006년 08월 21일</div>
+                <div class="infotext">Mail : zeroseven0821@gmail.com</div>
+                <div class="infotext">MBTI : ENTJ</div>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>

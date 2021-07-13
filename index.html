@@ -24,15 +24,14 @@
         }
 
 
+
+
         a {
             text-decoration: none;
             color: black;
         }
 
-        a,
-        a:link {
-            cursor: url('./cursor.cur'), auto;
-        }
+
 
         a:visited {
             text-decoration: none;
@@ -361,6 +360,82 @@
             transition-delay: 0.2s;
         }
 
+        .footer {
+            height: 15vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        hr {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .footerinfo {
+            display: flex;
+            flex-direction: row;
+            margin-top: 20px;
+
+        }
+
+        .myemail {
+            font-family: 'Montserrat', serif;
+            font-size: 20px;
+            color: white;
+            margin-top: 10px;
+
+        }
+
+        .empty {
+            width: 15%;
+        }
+
+        .emptymini {
+            width: 3%;
+        }
+
+        .emptymed {
+            width: 15%;
+        }
+
+        .mysns {
+            width: 20%;
+            height: 50px;
+            font-family: 'Montserrat', serif;
+            font-size: 20px;
+            color: white;
+            text-align: center;
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+        }
+
+        img {
+            margin-right: 10px;
+        }
+
+
+
+        .mysns:hover>.kim {
+            color: #833ab4;
+            transition: 0.3s;
+        }
+
+
+
+
+        .mysns:hover>.gom {
+            color: #fd1d1d;
+            transition: 0.6s;
+        }
+
+
+        .mysns:hover>.taeng {
+            color: #fcb045;
+            transition: 0.9s;
+        }
+
+
         @media(max-width:900px) {
             span {
                 font-size: 20px;
@@ -379,6 +454,7 @@
             }
         }
     </style>
+
 </head>
 
 <body>
@@ -405,6 +481,7 @@
             Scroll
         </span>
     </section>
+
 
 
     <section class="content-section--fullpage2">
@@ -435,10 +512,30 @@
                     </figcaption>
                 </figure>
             </a>
-
         </section>
     </section>
 
+    <section class="footer">
+        <hr style="border: solid 3px white; width: 80%;">
+        <div class="footerinfo">
+            <div class="emptymed"></div>
+            <div class="myemail">Email</div>
+            <div class="emptymini"></div>
+            <div class="myemail">:</div>
+            <div class="emptymini"></div>
+            <div class="myemail">zeroseven0821@gmail.com</div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="emptymini"></div>
+            <a href="https://www.instagram.com/kim_gom_taeng/">
+                <div class="mysns"><img src=insta.jpg width="50px" height="50px">
+                    <div class="kim">@kim_</div>
+                    <div class="gom">gom_</div>
+                    <div class="taeng">taeng</div>
+                </div>
+            </a>
+        </div>
+    </section>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
@@ -526,6 +623,8 @@
                 end: "center 35%"
             }
         }))
+
+
 
 
 
