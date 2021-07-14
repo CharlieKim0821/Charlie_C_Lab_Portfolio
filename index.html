@@ -3,632 +3,75 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charlie Kim</title>
-
+    <title>Loading.....</title>
+    <meta http-equiv="refresh" content="4; url=https://charliekim0821.github.io/Charlie_C_Lab_Portfolio/">
     <style>
-        @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
-
-        @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100&display=swap');
-
-        @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
-
-        @import url('https://fonts.googleapis.com/css?family=Montserrat:300|Spartan&display=swap');
-
-        @font-face {
-            font-family: 'GoyangIlsan';
-            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GoyangIlsan.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
-        }
-
-
-
-
-        a {
-            text-decoration: none;
-            color: black;
-        }
-
-
-
-        a:visited {
-            text-decoration: none;
-        }
-
-
-        a:focus {
-            text-decoration: none;
-        }
-
-
-        a:active {
-            text-decoration: none;
-        }
-
-
+        html,
         body {
-            margin: 0;
-            background-color: black;
-        }
-
-        ul,
-        li {
-            list-style: none;
-        }
-
-        .slide {
-            background-color: black;
             width: 100%;
-            height: 100vh;
+            height: 100%;
+            background: #000;
+            position: relative;
             overflow: hidden;
+        }
+
+        .container {
+            font-size: 40px;
+            font-family: 'Red Hat Display', sans-serif;
+            letter-spacing: 1.5px;
             position: absolute;
-            text-align: center;
-            align-items: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 600px;
+            height: 40px;
         }
 
-        .slide ul {
-            height: calc(100% * 4);
-            animation: slide 8s infinite;
-        }
-
-        .slide li {
-            height: calc(100% / 4);
-
-        }
-
-        .slide li:nth-child(1) {
-            background-image: url(./seoul.jpg );
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            filter: brightness(100%);
-        }
-
-        .slide li:nth-child(2) {
-            background-image: url(./night.jpg );
-            background-repeat: no-repeat;
-            background-position: center;
-            filter: brightness(100%);
-            text-align: center;
-        }
-
-        .slide li:nth-child(3) {
-            background-image: url(./lamp.jpg );
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            filter: brightness(100%);
-        }
-
-        .slide li:nth-child(4) {
-            background-image: url(./gayang.jpg );
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            filter: brightness(100%);
-        }
-
-        @keyframes slide {
-            0% {
-                margin-top: 0;
-            }
-
-            10% {
-                margin-top: 0;
-            }
-
-            25% {
-                margin-top: -100vh;
-            }
-
-            35% {
-                margin-top: -100vh;
-            }
-
-            50% {
-                margin-top: -200vh;
-            }
-
-            60% {
-                margin-top: -200vh;
-            }
-
-            75% {
-                margin-top: -300vh;
-            }
-
-            85% {
-                margin-top: -300vh;
-            }
-
-            100% {
-                margin-top: 0;
-            }
-        }
-
-        .content-section--fullpage {
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex: 1;
-            height: 100vh;
-            background-image: url(./seouldark.jpg );
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            filter: brightness(100%);
-        }
-
-
-
-        .about-me {
-
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex: 1;
-            height: 100vh;
-        }
-
-
-
-        .content-section--fullpage2 {
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex: 1;
-            height: 100vh;
-        }
-
-
-
-        .content-section__headline-container {
-            position: relative;
-        }
-
-        span {
-            font-family: 'Montserrat', serif;
-            color: white;
-            display: inline-block;
-            box-sizing: border-box;
-            padding: 0 25px;
-            font-size: 50px;
-            text-shadow: 0px 1px 1px black;
-            font-weight: 700;
-            letter-spacing: 1px;
-
-        }
-
-
-        span:hover {
-            transition: 0.4s;
-            text-shadow: 10px 10px 10px grey;
-        }
-
-
-        .content-section__headline {
-            margin: 0;
-            opacity: 0;
-            color: #DDE1E4;
-            text-align: center;
-            text-transform: uppercase;
-            position: relative;
-        }
-
-        .scroll-indicator {
-            position: absolute;
-            bottom: 100px;
-            display: block;
-            padding-top: 40px;
-            padding-bottom: 10px;
-            font-size: 8px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-
-
-
-
-        /*여기까지 스크롤 이벤트*/
-        @import url(https://fonts.googleapis.com/css?family=Raleway);
-
-        .snip1584 {
-            font-family: 'Montserrat', serif;
-            position: relative;
+        .container * {
             display: inline-block;
             overflow: hidden;
-            margin: 100px;
-            min-width: 300px;
-            max-width: 400px;
-            width: 100%;
-            color: #ffffff;
-            font-size: 16px;
-            text-align: left;
-            box-shadow: 0px 0px 10px 10px #ae895d;
-        }
-
-        .snip1584 * {
-            -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-            -webkit-transition: all 0.25s ease;
-            transition: all 0.25s ease;
-        }
-
-        .snip1584:before {
             position: absolute;
-            top: 10px;
-            bottom: 10px;
-            left: 10px;
-            right: 10px;
-            top: 100%;
-            content: '';
-            background-color: rgba(51, 51, 51, 0.9);
-            -webkit-transition: all 0.25s ease;
-            transition: all 0.25s ease;
-            -webkit-transition-delay: 0.25s;
-            transition-delay: 0.25s;
         }
 
-        .snip1584 img {
-            vertical-align: top;
-            max-width: 100%;
-            backface-visibility: hidden;
-        }
-
-        .snip1584 figcaption {
+        .bar {
+            width: 3px;
+            height: 49px;
             position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            z-index: 1;
-            align-items: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .snip1584 h3,
-        .snip1584 h5 {
-            margin: 0;
-            opacity: 0;
-            letter-spacing: 1px;
-        }
-
-        .snip1584 h3 {
-            -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
-            font-weight: 400;
-            -webkit-transition-delay: 0.05s;
-            transition-delay: 0.05s;
-            margin-bottom: 5px;
-        }
-
-        .snip1584 h5 {
-            font-weight: normal;
-            background-color: #ae895d;
-            padding: 3px 10px;
-            -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
-            -webkit-transition-delay: 0s;
-            transition-delay: 0s;
-        }
-
-        .snip1584 a {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            z-index: 1;
-        }
-
-        .snip1584:hover:before,
-        .snip1584.hover:before {
-            top: 10px;
-            -webkit-transition-delay: 0s;
-            transition-delay: 0s;
-        }
-
-        .snip1584:hover h3,
-        .snip1584.hover h3,
-        .snip1584:hover h5,
-        .snip1584.hover h5 {
-            -webkit-transform: translateY(0);
-            transform: translateY(0);
-            opacity: 1;
-        }
-
-        .snip1584:hover h3,
-        .snip1584.hover h3 {
-            -webkit-transition-delay: 0.3s;
-            transition-delay: 0.3s;
-        }
-
-        .snip1584:hover h5,
-        .snip1584.hover h5 {
-            -webkit-transition-delay: 0.2s;
-            transition-delay: 0.2s;
-        }
-
-        .footer {
-            height: 15vh;
-            display: flex;
-            flex-direction: column;
-        }
-
-        hr {
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .footerinfo {
-            display: flex;
-            flex-direction: row;
-            margin-top: 20px;
-
-        }
-
-        .myemail {
-            font-family: 'Montserrat', serif;
-            font-size: 20px;
-            color: white;
-            margin-top: 10px;
-
-        }
-
-        .empty {
-            width: 15%;
-        }
-
-        .emptymini {
-            width: 3%;
-        }
-
-        .emptymed {
-            width: 15%;
-        }
-
-        .mysns {
-            width: 20%;
-            height: 50px;
-            font-family: 'Montserrat', serif;
-            font-size: 20px;
-            color: white;
-            text-align: center;
-            align-items: center;
-            display: flex;
-            flex-direction: row;
-        }
-
-        img {
-            margin-right: 10px;
-        }
-
-
-
-        .mysns:hover>.kim {
-            color: #833ab4;
-            transition: 0.3s;
-        }
-
-
-
-
-        .mysns:hover>.gom {
-            color: #fd1d1d;
-            transition: 0.6s;
-        }
-
-
-        .mysns:hover>.taeng {
-            color: #fcb045;
-            transition: 0.9s;
-        }
-
-
-        @media(max-width:900px) {
-            span {
-                font-size: 20px;
-                padding: 5px;
-            }
-
-            .snip1584 {
-                min-width: 200px;
-                max-width: 200px;
-                margin: 50px;
-            }
-
-            .portfolio-experiment {
-                display: flex;
-                flex-direction: column;
-            }
+            top: -1px;
         }
     </style>
-
 </head>
 
 <body>
+    <div class="container">
+        <span class="txt1">www.github.io/</span><span class="txt2">-portfolio</span>
+        <div class="bar"></div>
+    </div>
 
-
-    <section class="content-section--fullpage">
-        <div class="slide">
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
-        <div class="content-section__headline-container">
-            <h1 class="content-section__headline">
-                Charlie
-            </h1>
-
-        </div>
-
-        <span class="scroll-indicator">
-            <span class="scroll-indicator__line"></span>
-            Scroll
-        </span>
-    </section>
-
-
-
-    <section class="content-section--fullpage2">
-        <section class="portfolio-experiment">
-            <a href="./aboutme.html">
-                <figure class="snip1584"><img src="./card1.jpg" alt="sample87" />
-                    <figcaption>
-                        <h3>Charlie Kim</h3>
-                        <h5>About me</h5>
-                    </figcaption>
-                </figure>
-            </a>
-
-            <a href="./personal.html">
-                <figure class="snip1584"><img src="./gschoollogo.png" alt="sample120" />
-                    <figcaption>
-                        <h3>Personal Projects</h3>
-                        <h5>Module 1~4</h5>
-                    </figcaption>
-                </figure>
-            </a>
-
-            <a href="https://charliekim0821.github.io/BLC-Web/index.html">
-                <figure class="snip1584"><img src="./card2.png" alt="sample119" />
-                    <figcaption>
-                        <h3>Team BLC</h3>
-                        <h5>Team Website</h5>
-                    </figcaption>
-                </figure>
-            </a>
-        </section>
-    </section>
-
-    <section class="footer">
-        <hr style="border: solid 3px white; width: 80%;">
-        <div class="footerinfo">
-            <div class="emptymed"></div>
-            <div class="myemail">Email</div>
-            <div class="emptymini"></div>
-            <div class="myemail">:</div>
-            <div class="emptymini"></div>
-            <div class="myemail">zeroseven0821@gmail.com</div>
-            <div class="empty"></div>
-            <div class="empty"></div>
-            <div class="emptymini"></div>
-            <a href="https://www.instagram.com/kim_gom_taeng/">
-                <div class="mysns"><img src=insta.jpg width="50px" height="50px">
-                    <div class="kim">@kim_</div>
-                    <div class="gom">gom_</div>
-                    <div class="taeng">taeng</div>
-                </div>
-            </a>
-        </div>
-    </section>
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>
-
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
     <script>
-        var headline = document.getElementsByClassName('content-section__headline-container');
-        var headlineOffset = headline[0].offsetTop;
-        var letters = headline[0].innerText.split('');
-        letters = letters.filter(function (letter) {
-            return letter !== ' ' && letter !== '\n' ? letter : false;
-        });
-        var tweenDistance = getRandomArbitrary(200, 400);
-        var topDistance = 0;
-        var movement = 0;
-        var elements = [];
+        window.onload = () => {
+            var color2 = 'yellow';
+            var color1 = '#fff';
+            var moveBar = () => { gsap.set('.bar', { left: gsap.getProperty('.txt1', 'width') + 1 }) };
 
-        function getRandomArbitrary(min, max) {
-            return Math.floor(Math.random() * (max - min)) + min;
+            gsap.timeline({ delay: 0.2 })
+                .set('.txt1', { color: color1, fontWeight: 'regular' })
+                .set('.txt2', { color: color2, fontWeight: 'bold', opacity: 0, x: gsap.getProperty('.txt1', 'width') - 2, immediateRender: true })
+                .set('.bar', { left: 1, backgroundColor: color1, immediateRender: true })
+
+                .to('.bar', { duration: 0.1, opacity: 0, ease: Expo.easeIn, yoyo: true, repeat: 5, repeatDelay: 0.3 }, 0)
+                .from('.txt1', { duration: 1.1, width: 0, ease: SteppedEase.config(14), onUpdate: moveBar }, 2.5)
+                .to('.bar', { duration: 0.05, backgroundColor: color2 }, '+=0.15')
+                .to('.bar', { duration: 1.0, width: 230, ease: Power4.easeInOut }, '+=0.1')
+                .from('.container', { duration: 1.0, x: 135, ease: Power4.easeInOut }, '-=1.0')
+                .to('.txt2', { duration: 0.01, opacity: 1 }, '-=0.1')
+                .to('.bar', { duration: 0.4, x: 290, width: 0, ease: Power4.easeIn })
+                .to('.txt1', { duration: 1.5, opacity: 0.25, ease: Power3.easeInOut }, '-=1.2')
+                .timeScale(1.45)
         }
-
-        function move(element, distance) {
-            var translate3d = 'translate3d(0, ' + distance + 'px, 0)';
-            element.style['-webkit-transform'] = translate3d;
-            element.style['-moz-transform'] = translate3d;
-            element.style['-ms-transform'] = translate3d;
-            element.style['-o-transform'] = translate3d;
-            element.style.transform = translate3d;
-        };
-
-        function moveY(element, distance) {
-            var translate3d = 'translateY(' + distance + '%)';
-            element.style['-webkit-transform'] = translate3d;
-            element.style['-moz-transform'] = translate3d;
-            element.style['-ms-transform'] = translate3d;
-            element.style['-o-transform'] = translate3d;
-            element.style.transform = translate3d;
-        };
-
-        function fadeOut(element, scrollDistance, tweenDistance) {
-            element.style.opacity = (tweenDistance - scrollDistance) / tweenDistance;
-        }
-
-        function tweenHeight(element, scrollDistance, tweenDistance, initialHeight) {
-            element.style.height = (((tweenDistance - scrollDistance) / tweenDistance) * initialHeight) + 'px';
-        }
-
-        letters.forEach(function (letter) {
-            var element = document.createElement('span');
-            element.innerText = letter;
-            element.dataset.speed = Math.random(0, 1).toFixed(2);
-            headline[0].appendChild(element);
-            elements.push(element);
-        });
-
-        window.addEventListener('scroll', function (event) {
-            var scrollIndicator = document.getElementsByClassName('scroll-indicator');
-            var scrollIndicatorLine = document.getElementsByClassName('scroll-indicator__line');
-            topDistance = window.pageYOffset;
-            movement = topDistance * 2;
-
-            fadeOut(scrollIndicator[0], topDistance, 150);
-            tweenHeight(scrollIndicatorLine[0], topDistance, 100, 25);
-
-            elements.forEach(function (element) {
-                movement = -(topDistance * element.dataset.speed);
-                move(element, movement);
-                fadeOut(element, topDistance, tweenDistance);
-            });
-        });
-
-        /**/
-
-        const division = gsap.utils.toArray(".snip1584")
-
-        division.forEach((snip1584) => gsap.fromTo(snip1584, { opacity: 0 }, {
-            duration: 3,
-            opacity: 1,
-            scrollTrigger: {
-                trigger: snip1584,
-                // markers: true,
-                scrub: 1,
-                // scrollActions: "restart none none reverse",
-                start: "center bottom",
-                end: "center 35%"
-            }
-        }))
-
-
-
-
-
     </script>
+
 </body>
 
 </html>

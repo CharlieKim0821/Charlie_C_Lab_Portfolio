@@ -3,13 +3,37 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>About me</title>
     <style>
         @font-face {
             font-family: 'Cafe24SsurroundAir';
             src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
             font-weight: normal;
             font-style: normal;
+        }
+
+
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:300|Spartan&display=swap');
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+
+
+        a:visited {
+            text-decoration: none;
+        }
+
+
+        a:focus {
+            text-decoration: none;
+        }
+
+
+        a:active {
+            text-decoration: none;
         }
 
         * {
@@ -30,7 +54,7 @@
 
 
         .aboutmesection {
-            height: 80vh;
+            height: 60vh;
             background-color: black;
         }
 
@@ -38,13 +62,13 @@
             font-family: 'Cafe24SsurroundAir';
             height: 400px;
             width: 60%;
-            margin-top: 50vh;
+            margin-top: 30vh;
             margin-left: auto;
             margin-right: auto;
             color: white;
             display: flex;
             flex-direction: row;
-            box-shadow: 0px 0px 20px 20px white;
+            border: solid white;
             align-items: center;
             border-radius: 20px 20px 20px 20px;
         }
@@ -68,6 +92,92 @@
             font-size: 20px;
             margin-bottom: 20px;
         }
+
+        .footer {
+            font-family: 'Montserrat', serif;
+            height: 15vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        hr {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .footerinfo {
+            display: flex;
+            flex-direction: row;
+            margin-top: 20px;
+
+        }
+
+        .myemail {
+            font-family: 'Montserrat', serif;
+            font-size: 20px;
+            color: white;
+            margin-top: 10px;
+
+        }
+
+        .empty1 {
+            width: 15%;
+        }
+
+        .emptymini {
+            width: 3%;
+        }
+
+        .emptymed {
+            width: 15%;
+        }
+
+        .mysns {
+            width: 20%;
+            height: 50px;
+            font-family: 'Montserrat', serif;
+            font-size: 20px;
+            color: white;
+            text-align: center;
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+        }
+
+        img {
+            margin-right: 10px;
+        }
+
+        .backtomain {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .button {
+            color: white;
+            margin-left: 60px;
+            font-size: 20px;
+        }
+
+
+        .mysns:hover>.kim {
+            color: #833ab4;
+            transition: 0.3s;
+        }
+
+
+
+
+        .mysns:hover>.gom {
+            color: #fd1d1d;
+            transition: 0.6s;
+        }
+
+
+        .mysns:hover>.taeng {
+            color: #fcb045;
+            transition: 0.9s;
+        }
     </style>
 </head>
 
@@ -83,8 +193,35 @@
                 <div class="infotext">이름 :김윤겸</div>
                 <div class="infotext">생년월일 : 2006년 08월 21일</div>
                 <div class="infotext">Mail : zeroseven0821@gmail.com</div>
-                <div class="infotext">MBTI : ENTJ</div>
+                <div class="backtomain">
+                    <div class="infotext">MBTI : ENTJ </div>
+                    <a href="./index.html">
+                        <div class="button">-> Back to Main</div>
+                    </a>
+                </div>
             </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <hr style="border: solid 3px white; width: 80%;">
+        <div class="footerinfo">
+            <div class="emptymed"></div>
+            <div class="myemail">Email</div>
+            <div class="emptymini"></div>
+            <div class="myemail">:</div>
+            <div class="emptymini"></div>
+            <div class="myemail">zeroseven0821@gmail.com</div>
+            <div class="empty1"></div>
+            <div class="empty1"></div>
+            <div class="emptymini"></div>
+            <a href="https://www.instagram.com/kim_gom_taeng/">
+                <div class="mysns"><img src=insta.jpg width="50px" height="50px">
+                    <div class="kim">@kim_</div>
+                    <div class="gom">gom_</div>
+                    <div class="taeng">taeng</div>
+                </div>
+            </a>
         </div>
     </section>
 </body>
